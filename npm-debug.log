@@ -1,0 +1,1850 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'mpg321' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose install initial load of E:\speakingtest\package.json
+5 verbose readDependencies loading dependencies from E:\speakingtest\package.json
+6 silly cache add args [ 'mpg321', null ]
+7 verbose cache add spec mpg321
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'mpg321',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'mpg321',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed mpg321@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for mpg321
+11 info addNameTag [ 'mpg321', 'latest' ]
+12 silly mapToRegistry name mpg321
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'mpg321',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'mpg321',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/mpg321
+17 verbose addNameTag registry:https://registry.npmjs.org/mpg321 not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/mpg321
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 4:58:24 PM
+21 verbose request id aa1ab41c16933055
+22 verbose etag "54fe4115-1daa"
+23 verbose lastModified Tue, 10 Mar 2015 0:55:49 GMT
+24 http request GET https://registry.npmjs.org/mpg321
+25 http 304 https://registry.npmjs.org/mpg321
+26 verbose headers { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   'cache-control': 'max-age=300',
+26 verbose headers   etag: '"54fe4115-1daa"',
+26 verbose headers   age: '0',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-served-by': 'cache-bos8233-BOS',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1523912305.279640,VS0,VE60',
+26 verbose headers   vary: 'Accept-Encoding, Accept' }
+27 silly get cb [ 304,
+27 silly get   { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+27 silly get     via: '1.1 varnish',
+27 silly get     'cache-control': 'max-age=300',
+27 silly get     etag: '"54fe4115-1daa"',
+27 silly get     age: '0',
+27 silly get     connection: 'keep-alive',
+27 silly get     'x-served-by': 'cache-bos8233-BOS',
+27 silly get     'x-cache': 'MISS',
+27 silly get     'x-cache-hits': '0',
+27 silly get     'x-timer': 'S1523912305.279640,VS0,VE60',
+27 silly get     vary: 'Accept-Encoding, Accept' } ]
+28 verbose etag https://registry.npmjs.org/mpg321 from cache
+29 verbose get saving mpg321 to C:\Users\jowell\AppData\Roaming\npm-cache\registry.npmjs.org\mpg321\.cache.json
+30 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+31 silly addNameTag next cb for mpg321 with tag latest
+32 silly addNamed mpg321@0.1.5
+33 verbose addNamed "0.1.5" is a plain semver version for mpg321
+34 silly cache afterAdd mpg321@0.1.5
+35 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\mpg321\0.1.5\package\package.json not in flight; writing
+36 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+37 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\mpg321\0.1.5\package\package.json written
+38 silly install resolved [ { name: 'mpg321',
+38 silly install resolved     version: '0.1.5',
+38 silly install resolved     description: 'The mpg321 wrapper for Node.js',
+38 silly install resolved     keywords: [ 'mpg321', 'mpg123', 'play', 'sound', 'audio' ],
+38 silly install resolved     homepage: 'https://github.com/MakeNowJust/mpg321',
+38 silly install resolved     bugs: { url: 'https://github.com/MakeNowJust/mpg321/issues' },
+38 silly install resolved     license: 'Apache-2.0',
+38 silly install resolved     author: { name: 'TSUYUSATO Kitsune', email: 'make.just.on@gmail.com' },
+38 silly install resolved     main: 'index.js',
+38 silly install resolved     files: [ 'package.json', 'README.md', 'LICENSE', 'index.js', 'bin' ],
+38 silly install resolved     repository:
+38 silly install resolved      { type: 'git',
+38 silly install resolved        url: 'git+https://github.com/MakeNowJust/mpg321.git' },
+38 silly install resolved     scripts: { install: 'node bin/check-mpg321.js' },
+38 silly install resolved     dependencies: { 'event-stream': '^3.1.7', which: '^1.0.8' },
+38 silly install resolved     gitHead: 'f021072e13748b32dc2130beee385386dd21a3f7',
+38 silly install resolved     _id: 'mpg321@0.1.5',
+38 silly install resolved     _shasum: 'f4a1e3b9b1572ddfbfb448184d8faace7615dda3',
+38 silly install resolved     _from: 'https://registry.npmjs.org/mpg321/-/mpg321-0.1.5.tgz',
+38 silly install resolved     _resolved: 'https://registry.npmjs.org/mpg321/-/mpg321-0.1.5.tgz',
+38 silly install resolved     _fromGithub: true,
+38 silly install resolved     _npmVersion: '2.6.1',
+38 silly install resolved     _nodeVersion: '1.4.2',
+38 silly install resolved     _npmUser: { name: 'makenowjust', email: 'make.just.on@gmail.com' },
+38 silly install resolved     maintainers: [ [Object] ],
+38 silly install resolved     dist:
+38 silly install resolved      { shasum: 'f4a1e3b9b1572ddfbfb448184d8faace7615dda3',
+38 silly install resolved        tarball: 'https://registry.npmjs.org/mpg321/-/mpg321-0.1.5.tgz' },
+38 silly install resolved     directories: {},
+38 silly install resolved     readme: 'ERROR: No README data found!' } ]
+39 info install mpg321@0.1.5 into E:\speakingtest
+40 info installOne mpg321@0.1.5
+41 verbose installOne of mpg321 to E:\speakingtest not in flight; installing
+42 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+43 verbose lock using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\mpg321-35e93360bde0898a.lock for E:\speakingtest\node_modules\mpg321
+44 silly install write writing mpg321 0.1.5 to E:\speakingtest\node_modules\mpg321
+45 verbose unbuild node_modules\mpg321
+46 silly gentlyRm E:\speakingtest\node_modules\mpg321 is being purged from base E:\speakingtest
+47 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321
+48 verbose tar unpack C:\Users\jowell\AppData\Roaming\npm-cache\mpg321\0.1.5\package.tgz
+49 verbose tar unpacking to E:\speakingtest\node_modules\mpg321
+50 silly gentlyRm E:\speakingtest\node_modules\mpg321 is being purged
+51 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321
+52 silly gunzTarPerm modes [ '777', '666' ]
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+55 silly gunzTarPerm extractEntry README.md
+56 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+57 silly gunzTarPerm extractEntry LICENSE
+58 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+59 silly gunzTarPerm extractEntry index.js
+60 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+61 silly gunzTarPerm extractEntry bin/check-mpg321.js
+62 silly gunzTarPerm modified mode [ 'bin/check-mpg321.js', 436, 438 ]
+63 verbose write writing to E:\speakingtest\node_modules\mpg321\package.json
+64 info preinstall mpg321@0.1.5
+65 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\package.json
+66 silly prepareForInstallMany adding event-stream@^3.1.7 from mpg321 dependencies
+67 silly prepareForInstallMany adding which@^1.0.8 from mpg321 dependencies
+68 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\package.json
+69 silly cache add args [ 'event-stream@^3.1.7', null ]
+70 verbose cache add spec event-stream@^3.1.7
+71 silly cache add args [ 'which@^1.0.8', null ]
+72 verbose cache add spec which@^1.0.8
+73 silly cache add parsed spec Result {
+73 silly cache add   raw: 'event-stream@^3.1.7',
+73 silly cache add   scope: null,
+73 silly cache add   name: 'event-stream',
+73 silly cache add   rawSpec: '^3.1.7',
+73 silly cache add   spec: '>=3.1.7 <4.0.0',
+73 silly cache add   type: 'range' }
+74 silly addNamed event-stream@>=3.1.7 <4.0.0
+75 verbose addNamed ">=3.1.7 <4.0.0" is a valid semver range for event-stream
+76 silly addNameRange { name: 'event-stream', range: '>=3.1.7 <4.0.0', hasData: false }
+77 silly mapToRegistry name event-stream
+78 silly mapToRegistry using default registry
+79 silly mapToRegistry registry https://registry.npmjs.org/
+80 silly mapToRegistry data Result {
+80 silly mapToRegistry   raw: 'event-stream',
+80 silly mapToRegistry   scope: null,
+80 silly mapToRegistry   name: 'event-stream',
+80 silly mapToRegistry   rawSpec: '',
+80 silly mapToRegistry   spec: 'latest',
+80 silly mapToRegistry   type: 'tag' }
+81 silly mapToRegistry uri https://registry.npmjs.org/event-stream
+82 verbose addNameRange registry:https://registry.npmjs.org/event-stream not in flight; fetching
+83 silly cache add parsed spec Result {
+83 silly cache add   raw: 'which@^1.0.8',
+83 silly cache add   scope: null,
+83 silly cache add   name: 'which',
+83 silly cache add   rawSpec: '^1.0.8',
+83 silly cache add   spec: '>=1.0.8 <2.0.0',
+83 silly cache add   type: 'range' }
+84 silly addNamed which@>=1.0.8 <2.0.0
+85 verbose addNamed ">=1.0.8 <2.0.0" is a valid semver range for which
+86 silly addNameRange { name: 'which', range: '>=1.0.8 <2.0.0', hasData: false }
+87 silly mapToRegistry name which
+88 silly mapToRegistry using default registry
+89 silly mapToRegistry registry https://registry.npmjs.org/
+90 silly mapToRegistry data Result {
+90 silly mapToRegistry   raw: 'which',
+90 silly mapToRegistry   scope: null,
+90 silly mapToRegistry   name: 'which',
+90 silly mapToRegistry   rawSpec: '',
+90 silly mapToRegistry   spec: 'latest',
+90 silly mapToRegistry   type: 'tag' }
+91 silly mapToRegistry uri https://registry.npmjs.org/which
+92 verbose addNameRange registry:https://registry.npmjs.org/which not in flight; fetching
+93 verbose request uri https://registry.npmjs.org/event-stream
+94 verbose request no auth needed
+95 info attempt registry request try #1 at 4:58:25 PM
+96 verbose etag "5aa6406d-17bad"
+97 verbose lastModified Mon, 12 Mar 2018 8:55:09 GMT
+98 http request GET https://registry.npmjs.org/event-stream
+99 verbose request uri https://registry.npmjs.org/which
+100 verbose request no auth needed
+101 info attempt registry request try #1 at 4:58:25 PM
+102 verbose etag "5a772807-803b"
+103 verbose lastModified Sun, 4 Feb 2018 15:34:31 GMT
+104 http request GET https://registry.npmjs.org/which
+105 http 304 https://registry.npmjs.org/event-stream
+106 verbose headers { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+106 verbose headers   via: '1.1 varnish',
+106 verbose headers   'cache-control': 'max-age=300',
+106 verbose headers   etag: '"5aa6406d-17bad"',
+106 verbose headers   age: '11910',
+106 verbose headers   connection: 'keep-alive',
+106 verbose headers   'x-served-by': 'cache-bos8233-BOS',
+106 verbose headers   'x-cache': 'HIT',
+106 verbose headers   'x-cache-hits': '1',
+106 verbose headers   'x-timer': 'S1523912306.547922,VS0,VE0',
+106 verbose headers   vary: 'Accept-Encoding, Accept' }
+107 silly get cb [ 304,
+107 silly get   { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+107 silly get     via: '1.1 varnish',
+107 silly get     'cache-control': 'max-age=300',
+107 silly get     etag: '"5aa6406d-17bad"',
+107 silly get     age: '11910',
+107 silly get     connection: 'keep-alive',
+107 silly get     'x-served-by': 'cache-bos8233-BOS',
+107 silly get     'x-cache': 'HIT',
+107 silly get     'x-cache-hits': '1',
+107 silly get     'x-timer': 'S1523912306.547922,VS0,VE0',
+107 silly get     vary: 'Accept-Encoding, Accept' } ]
+108 verbose etag https://registry.npmjs.org/event-stream from cache
+109 verbose get saving event-stream to C:\Users\jowell\AppData\Roaming\npm-cache\registry.npmjs.org\event-stream\.cache.json
+110 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+111 silly addNameRange number 2 { name: 'event-stream', range: '>=3.1.7 <4.0.0', hasData: true }
+112 silly addNameRange versions [ 'event-stream',
+112 silly addNameRange   [ '0.1.0',
+112 silly addNameRange     '0.2.0',
+112 silly addNameRange     '0.2.1',
+112 silly addNameRange     '0.3.0',
+112 silly addNameRange     '0.4.0',
+112 silly addNameRange     '0.5.0',
+112 silly addNameRange     '0.5.1',
+112 silly addNameRange     '0.5.2',
+112 silly addNameRange     '0.5.3',
+112 silly addNameRange     '0.6.0',
+112 silly addNameRange     '0.7.0',
+112 silly addNameRange     '0.8.0',
+112 silly addNameRange     '0.8.1',
+112 silly addNameRange     '0.8.2',
+112 silly addNameRange     '0.9.0',
+112 silly addNameRange     '0.9.1',
+112 silly addNameRange     '0.9.2',
+112 silly addNameRange     '0.9.3',
+112 silly addNameRange     '0.9.4',
+112 silly addNameRange     '0.9.6',
+112 silly addNameRange     '0.9.7',
+112 silly addNameRange     '0.9.8',
+112 silly addNameRange     '0.10.0',
+112 silly addNameRange     '1.0.0',
+112 silly addNameRange     '1.1.0',
+112 silly addNameRange     '1.2.0',
+112 silly addNameRange     '1.3.0',
+112 silly addNameRange     '1.3.1',
+112 silly addNameRange     '2.0.0',
+112 silly addNameRange     '2.0.1',
+112 silly addNameRange     '2.0.2',
+112 silly addNameRange     '2.0.3',
+112 silly addNameRange     '2.0.4',
+112 silly addNameRange     '2.0.9',
+112 silly addNameRange     '2.0.10',
+112 silly addNameRange     '2.1.0',
+112 silly addNameRange     '2.1.2',
+112 silly addNameRange     '2.1.3',
+112 silly addNameRange     '2.1.4',
+112 silly addNameRange     '2.1.5',
+112 silly addNameRange     '2.1.7',
+112 silly addNameRange     '2.1.8',
+112 silly addNameRange     '2.1.9',
+112 silly addNameRange     '2.2.0',
+112 silly addNameRange     '2.2.1',
+112 silly addNameRange     '2.2.2',
+112 silly addNameRange     '2.2.3',
+112 silly addNameRange     '3.0.0',
+112 silly addNameRange     '3.0.1',
+112 silly addNameRange     '3.0.2',
+112 silly addNameRange     '3.0.3',
+112 silly addNameRange     '3.0.4',
+112 silly addNameRange     '3.0.5',
+112 silly addNameRange     '3.0.6',
+112 silly addNameRange     '3.0.7',
+112 silly addNameRange     '3.0.8',
+112 silly addNameRange     '3.0.9',
+112 silly addNameRange     '3.0.10',
+112 silly addNameRange     '3.0.11',
+112 silly addNameRange     '3.0.12',
+112 silly addNameRange     '3.0.13',
+112 silly addNameRange     '3.0.14',
+112 silly addNameRange     '3.0.15',
+112 silly addNameRange     '3.0.16',
+112 silly addNameRange     '3.0.17',
+112 silly addNameRange     '3.0.18',
+112 silly addNameRange     '3.0.20',
+112 silly addNameRange     '3.1.0',
+112 silly addNameRange     '3.1.1',
+112 silly addNameRange     '3.1.2',
+112 silly addNameRange     '3.1.4',
+112 silly addNameRange     '3.1.5',
+112 silly addNameRange     '3.1.7',
+112 silly addNameRange     '3.2.0',
+112 silly addNameRange     '3.2.1',
+112 silly addNameRange     '3.2.2',
+112 silly addNameRange     '3.3.0',
+112 silly addNameRange     '3.3.1',
+112 silly addNameRange     '3.3.2',
+112 silly addNameRange     '3.3.3',
+112 silly addNameRange     '3.3.4' ] ]
+113 silly addNamed event-stream@3.3.4
+114 verbose addNamed "3.3.4" is a plain semver version for event-stream
+115 silly cache afterAdd event-stream@3.3.4
+116 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\event-stream\3.3.4\package\package.json not in flight; writing
+117 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+118 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\event-stream\3.3.4\package\package.json written
+119 http 304 https://registry.npmjs.org/which
+120 verbose headers { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+120 verbose headers   via: '1.1 varnish',
+120 verbose headers   'cache-control': 'max-age=300',
+120 verbose headers   etag: '"5a772807-803b"',
+120 verbose headers   age: '1732',
+120 verbose headers   connection: 'keep-alive',
+120 verbose headers   'x-served-by': 'cache-bos8230-BOS',
+120 verbose headers   'x-cache': 'HIT',
+120 verbose headers   'x-cache-hits': '1',
+120 verbose headers   'x-timer': 'S1523912306.591804,VS0,VE0',
+120 verbose headers   vary: 'Accept-Encoding, Accept' }
+121 silly get cb [ 304,
+121 silly get   { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+121 silly get     via: '1.1 varnish',
+121 silly get     'cache-control': 'max-age=300',
+121 silly get     etag: '"5a772807-803b"',
+121 silly get     age: '1732',
+121 silly get     connection: 'keep-alive',
+121 silly get     'x-served-by': 'cache-bos8230-BOS',
+121 silly get     'x-cache': 'HIT',
+121 silly get     'x-cache-hits': '1',
+121 silly get     'x-timer': 'S1523912306.591804,VS0,VE0',
+121 silly get     vary: 'Accept-Encoding, Accept' } ]
+122 verbose etag https://registry.npmjs.org/which from cache
+123 verbose get saving which to C:\Users\jowell\AppData\Roaming\npm-cache\registry.npmjs.org\which\.cache.json
+124 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+125 silly addNameRange number 2 { name: 'which', range: '>=1.0.8 <2.0.0', hasData: true }
+126 silly addNameRange versions [ 'which',
+126 silly addNameRange   [ '1.0.0',
+126 silly addNameRange     '1.0.1',
+126 silly addNameRange     '1.0.2',
+126 silly addNameRange     '1.0.3',
+126 silly addNameRange     '1.0.5',
+126 silly addNameRange     '1.0.6',
+126 silly addNameRange     '1.0.7',
+126 silly addNameRange     '1.0.8',
+126 silly addNameRange     '1.0.9',
+126 silly addNameRange     '1.1.0',
+126 silly addNameRange     '1.1.1',
+126 silly addNameRange     '1.1.2',
+126 silly addNameRange     '1.2.0',
+126 silly addNameRange     '1.2.1',
+126 silly addNameRange     '1.2.4',
+126 silly addNameRange     '1.2.5',
+126 silly addNameRange     '1.2.6',
+126 silly addNameRange     '1.2.7',
+126 silly addNameRange     '1.2.8',
+126 silly addNameRange     '1.2.9',
+126 silly addNameRange     '1.2.10',
+126 silly addNameRange     '1.2.11',
+126 silly addNameRange     '1.2.12',
+126 silly addNameRange     '1.2.13',
+126 silly addNameRange     '1.2.14',
+126 silly addNameRange     '1.3.0' ] ]
+127 silly addNamed which@1.3.0
+128 verbose addNamed "1.3.0" is a plain semver version for which
+129 silly cache afterAdd which@1.3.0
+130 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\which\1.3.0\package\package.json not in flight; writing
+131 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+132 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\which\1.3.0\package\package.json written
+133 silly install resolved [ { name: 'event-stream',
+133 silly install resolved     version: '3.3.4',
+133 silly install resolved     description: 'construct pipes of streams of events',
+133 silly install resolved     homepage: 'http://github.com/dominictarr/event-stream',
+133 silly install resolved     repository:
+133 silly install resolved      { type: 'git',
+133 silly install resolved        url: 'git://github.com/dominictarr/event-stream.git' },
+133 silly install resolved     dependencies:
+133 silly install resolved      { through: '~2.3.1',
+133 silly install resolved        duplexer: '~0.1.1',
+133 silly install resolved        from: '~0',
+133 silly install resolved        'map-stream': '~0.1.0',
+133 silly install resolved        'pause-stream': '0.0.11',
+133 silly install resolved        split: '0.3',
+133 silly install resolved        'stream-combiner': '~0.0.4' },
+133 silly install resolved     devDependencies:
+133 silly install resolved      { asynct: '*',
+133 silly install resolved        'it-is': '1',
+133 silly install resolved        ubelt: '~3.2.2',
+133 silly install resolved        'stream-spec': '~0.3.5',
+133 silly install resolved        tape: '~2.3.0' },
+133 silly install resolved     scripts:
+133 silly install resolved      { prepublish: 'npm ls && npm test',
+133 silly install resolved        test: 'asynct test/',
+133 silly install resolved        test_tap: 'set -e; for t in test/*.js; do node $t; done' },
+133 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+133 silly install resolved     license: 'MIT',
+133 silly install resolved     author:
+133 silly install resolved      { name: 'Dominic Tarr',
+133 silly install resolved        email: 'dominic.tarr@gmail.com',
+133 silly install resolved        url: 'http://bit.ly/dominictarr' },
+133 silly install resolved     gitHead: '0d9d45744b06ead81976b3400569160b76299a41',
+133 silly install resolved     bugs: { url: 'https://github.com/dominictarr/event-stream/issues' },
+133 silly install resolved     _id: 'event-stream@3.3.4',
+133 silly install resolved     _shasum: '4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571',
+133 silly install resolved     _from: 'event-stream@>=3.1.7 <4.0.0',
+133 silly install resolved     _npmVersion: '3.8.9',
+133 silly install resolved     _nodeVersion: '6.2.0',
+133 silly install resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+133 silly install resolved     dist:
+133 silly install resolved      { shasum: '4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571',
+133 silly install resolved        tarball: 'http://registry.npmjs.org/event-stream/-/event-stream-3.3.4.tgz' },
+133 silly install resolved     maintainers: [ [Object] ],
+133 silly install resolved     _npmOperationalInternal:
+133 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+133 silly install resolved        tmp: 'tmp/event-stream-3.3.4.tgz_1468740248120_0.7839670591056347' },
+133 silly install resolved     directories: {},
+133 silly install resolved     _resolved: 'https://registry.npmjs.org/event-stream/-/event-stream-3.3.4.tgz',
+133 silly install resolved     readme: 'ERROR: No README data found!' },
+133 silly install resolved   { author:
+133 silly install resolved      { name: 'Isaac Z. Schlueter',
+133 silly install resolved        email: 'i@izs.me',
+133 silly install resolved        url: 'http://blog.izs.me' },
+133 silly install resolved     name: 'which',
+133 silly install resolved     description: 'Like which(1) unix command. Find the first instance of an executable in the PATH.',
+133 silly install resolved     version: '1.3.0',
+133 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-which.git' },
+133 silly install resolved     main: 'which.js',
+133 silly install resolved     bin: { which: './bin/which' },
+133 silly install resolved     license: 'ISC',
+133 silly install resolved     dependencies: { isexe: '^2.0.0' },
+133 silly install resolved     devDependencies: { mkdirp: '^0.5.0', rimraf: '^2.3.3', tap: '^10.7.0' },
+133 silly install resolved     scripts:
+133 silly install resolved      { test: 'tap test/*.js --cov',
+133 silly install resolved        changelog: 'bash gen-changelog.sh',
+133 silly install resolved        postversion: 'npm run changelog && git add CHANGELOG.md && git commit -m \'update changelog - \'${npm_package_version}' },
+133 silly install resolved     files: [ 'which.js', 'bin/which' ],
+133 silly install resolved     gitHead: '6b2de9381d6f6484489187faf24d22ac5bf3d668',
+133 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-which/issues' },
+133 silly install resolved     homepage: 'https://github.com/isaacs/node-which#readme',
+133 silly install resolved     _id: 'which@1.3.0',
+133 silly install resolved     _npmVersion: '5.3.0',
+133 silly install resolved     _nodeVersion: '8.2.1',
+133 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+133 silly install resolved     dist:
+133 silly install resolved      { integrity: 'sha512-xcJpopdamTuY5duC/KnTTNBraPK54YwpenP4lzxU8H91GudWpFv38u0CKjclE1Wi2EH2EDz5LRcHcKbCIzqGyg==',
+133 silly install resolved        shasum: 'ff04bdfc010ee547d780bec38e1ac1c2777d253a',
+133 silly install resolved        tarball: 'https://registry.npmjs.org/which/-/which-1.3.0.tgz' },
+133 silly install resolved     maintainers: [ [Object] ],
+133 silly install resolved     _npmOperationalInternal:
+133 silly install resolved      { host: 's3://npm-registry-packages',
+133 silly install resolved        tmp: 'tmp/which-1.3.0.tgz_1501548893969_0.39246653905138373' },
+133 silly install resolved     directories: {},
+133 silly install resolved     _shasum: 'ff04bdfc010ee547d780bec38e1ac1c2777d253a',
+133 silly install resolved     _resolved: 'https://registry.npmjs.org/which/-/which-1.3.0.tgz',
+133 silly install resolved     _from: 'which@>=1.0.8 <2.0.0',
+133 silly install resolved     readme: 'ERROR: No README data found!' } ]
+134 info install event-stream@3.3.4 into E:\speakingtest\node_modules\mpg321
+135 info install which@1.3.0 into E:\speakingtest\node_modules\mpg321
+136 info installOne event-stream@3.3.4
+137 verbose installOne of event-stream to E:\speakingtest\node_modules\mpg321 not in flight; installing
+138 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+139 info installOne which@1.3.0
+140 verbose installOne of which to E:\speakingtest\node_modules\mpg321 not in flight; installing
+141 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+142 verbose lock using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\which-71cf917b17b97f9b.lock for E:\speakingtest\node_modules\mpg321\node_modules\which
+143 verbose lock using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\event-stream-a76aa6ece5f98d98.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+144 silly install write writing which 1.3.0 to E:\speakingtest\node_modules\mpg321\node_modules\which
+145 silly install write writing event-stream 3.3.4 to E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+146 verbose unbuild node_modules\mpg321\node_modules\event-stream
+147 verbose unbuild node_modules\mpg321\node_modules\which
+148 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\which is being purged from base E:\speakingtest
+149 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\which
+150 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream is being purged from base E:\speakingtest
+151 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+152 verbose tar unpack C:\Users\jowell\AppData\Roaming\npm-cache\which\1.3.0\package.tgz
+153 verbose tar unpacking to E:\speakingtest\node_modules\mpg321\node_modules\which
+154 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\which is being purged
+155 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\which
+156 verbose tar unpack C:\Users\jowell\AppData\Roaming\npm-cache\event-stream\3.3.4\package.tgz
+157 verbose tar unpacking to E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+158 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream is being purged
+159 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+160 silly gunzTarPerm modes [ '777', '666' ]
+161 silly gunzTarPerm modes [ '777', '666' ]
+162 silly gunzTarPerm extractEntry package.json
+163 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+164 silly gunzTarPerm extractEntry package.json
+165 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+166 silly gunzTarPerm extractEntry .npmignore
+167 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+168 silly gunzTarPerm extractEntry LICENCE
+169 silly gunzTarPerm modified mode [ 'LICENCE', 420, 438 ]
+170 silly gunzTarPerm extractEntry README.md
+171 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+172 silly gunzTarPerm extractEntry LICENSE
+173 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+174 silly gunzTarPerm extractEntry index.js
+175 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+176 silly gunzTarPerm extractEntry .travis.yml
+177 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+178 silly gunzTarPerm extractEntry which.js
+179 silly gunzTarPerm modified mode [ 'which.js', 420, 438 ]
+180 silly gunzTarPerm extractEntry bin/which
+181 silly gunzTarPerm modified mode [ 'bin/which', 493, 511 ]
+182 silly gunzTarPerm extractEntry examples/pretty.js
+183 silly gunzTarPerm modified mode [ 'examples/pretty.js', 420, 438 ]
+184 silly gunzTarPerm extractEntry readme.markdown
+185 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+186 silly gunzTarPerm extractEntry CHANGELOG.md
+187 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+188 silly gunzTarPerm extractEntry test/connect.asynct.js
+189 silly gunzTarPerm modified mode [ 'test/connect.asynct.js', 420, 438 ]
+190 silly gunzTarPerm extractEntry test/parse.asynct.js
+191 silly gunzTarPerm modified mode [ 'test/parse.asynct.js', 420, 438 ]
+192 silly gunzTarPerm extractEntry test/pause.asynct.js
+193 silly gunzTarPerm modified mode [ 'test/pause.asynct.js', 420, 438 ]
+194 silly gunzTarPerm extractEntry test/pipeline.asynct.js
+195 silly gunzTarPerm modified mode [ 'test/pipeline.asynct.js', 420, 438 ]
+196 silly gunzTarPerm extractEntry test/merge.asynct.js
+197 silly gunzTarPerm modified mode [ 'test/merge.asynct.js', 420, 438 ]
+198 silly gunzTarPerm extractEntry test/stringify.js
+199 silly gunzTarPerm modified mode [ 'test/stringify.js', 420, 438 ]
+200 silly gunzTarPerm extractEntry test/replace.asynct.js
+201 silly gunzTarPerm modified mode [ 'test/replace.asynct.js', 420, 438 ]
+202 silly gunzTarPerm extractEntry test/simple-map.asynct.js
+203 silly gunzTarPerm modified mode [ 'test/simple-map.asynct.js', 420, 438 ]
+204 silly gunzTarPerm extractEntry test/spec.asynct.js
+205 silly gunzTarPerm modified mode [ 'test/spec.asynct.js', 420, 438 ]
+206 verbose write writing to E:\speakingtest\node_modules\mpg321\node_modules\which\package.json
+207 silly gunzTarPerm extractEntry test/split.asynct.js
+208 silly gunzTarPerm modified mode [ 'test/split.asynct.js', 420, 438 ]
+209 silly gunzTarPerm extractEntry test/readArray.asynct.js
+210 silly gunzTarPerm modified mode [ 'test/readArray.asynct.js', 420, 438 ]
+211 info preinstall which@1.3.0
+212 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\which\package.json
+213 silly prepareForInstallMany adding isexe@^2.0.0 from which dependencies
+214 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\which\package.json
+215 silly cache add args [ 'isexe@^2.0.0', null ]
+216 verbose cache add spec isexe@^2.0.0
+217 silly cache add parsed spec Result {
+217 silly cache add   raw: 'isexe@^2.0.0',
+217 silly cache add   scope: null,
+217 silly cache add   name: 'isexe',
+217 silly cache add   rawSpec: '^2.0.0',
+217 silly cache add   spec: '>=2.0.0 <3.0.0',
+217 silly cache add   type: 'range' }
+218 silly addNamed isexe@>=2.0.0 <3.0.0
+219 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for isexe
+220 silly addNameRange { name: 'isexe', range: '>=2.0.0 <3.0.0', hasData: false }
+221 silly mapToRegistry name isexe
+222 silly mapToRegistry using default registry
+223 silly mapToRegistry registry https://registry.npmjs.org/
+224 silly mapToRegistry data Result {
+224 silly mapToRegistry   raw: 'isexe',
+224 silly mapToRegistry   scope: null,
+224 silly mapToRegistry   name: 'isexe',
+224 silly mapToRegistry   rawSpec: '',
+224 silly mapToRegistry   spec: 'latest',
+224 silly mapToRegistry   type: 'tag' }
+225 silly mapToRegistry uri https://registry.npmjs.org/isexe
+226 verbose addNameRange registry:https://registry.npmjs.org/isexe not in flight; fetching
+227 silly gunzTarPerm extractEntry test/writeArray.asynct.js
+228 silly gunzTarPerm modified mode [ 'test/writeArray.asynct.js', 420, 438 ]
+229 silly gunzTarPerm extractEntry test/readable.asynct.js
+230 silly gunzTarPerm modified mode [ 'test/readable.asynct.js', 420, 438 ]
+231 verbose request uri https://registry.npmjs.org/isexe
+232 verbose request no auth needed
+233 info attempt registry request try #1 at 4:58:25 PM
+234 verbose etag "58d31c7c-2169"
+235 verbose lastModified Thu, 23 Mar 2017 0:53:16 GMT
+236 http request GET https://registry.npmjs.org/isexe
+237 silly gunzTarPerm extractEntry test/helper/index.js
+238 silly gunzTarPerm modified mode [ 'test/helper/index.js', 420, 438 ]
+239 http 304 https://registry.npmjs.org/isexe
+240 verbose headers { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+240 verbose headers   via: '1.1 varnish',
+240 verbose headers   'cache-control': 'max-age=300',
+240 verbose headers   etag: '"58d31c7c-2169"',
+240 verbose headers   age: '11485',
+240 verbose headers   connection: 'keep-alive',
+240 verbose headers   'x-served-by': 'cache-bos8233-BOS',
+240 verbose headers   'x-cache': 'HIT',
+240 verbose headers   'x-cache-hits': '2',
+240 verbose headers   'x-timer': 'S1523912306.739504,VS0,VE0',
+240 verbose headers   vary: 'Accept-Encoding, Accept' }
+241 silly get cb [ 304,
+241 silly get   { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+241 silly get     via: '1.1 varnish',
+241 silly get     'cache-control': 'max-age=300',
+241 silly get     etag: '"58d31c7c-2169"',
+241 silly get     age: '11485',
+241 silly get     connection: 'keep-alive',
+241 silly get     'x-served-by': 'cache-bos8233-BOS',
+241 silly get     'x-cache': 'HIT',
+241 silly get     'x-cache-hits': '2',
+241 silly get     'x-timer': 'S1523912306.739504,VS0,VE0',
+241 silly get     vary: 'Accept-Encoding, Accept' } ]
+242 verbose etag https://registry.npmjs.org/isexe from cache
+243 verbose get saving isexe to C:\Users\jowell\AppData\Roaming\npm-cache\registry.npmjs.org\isexe\.cache.json
+244 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+245 silly addNameRange number 2 { name: 'isexe', range: '>=2.0.0 <3.0.0', hasData: true }
+246 silly addNameRange versions [ 'isexe',
+246 silly addNameRange   [ '1.0.0', '1.0.1', '1.1.0', '1.1.1', '1.1.2', '2.0.0' ] ]
+247 silly addNamed isexe@2.0.0
+248 verbose addNamed "2.0.0" is a plain semver version for isexe
+249 silly cache afterAdd isexe@2.0.0
+250 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\isexe\2.0.0\package\package.json not in flight; writing
+251 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+252 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\isexe\2.0.0\package\package.json written
+253 silly install resolved [ { name: 'isexe',
+253 silly install resolved     version: '2.0.0',
+253 silly install resolved     description: 'Minimal module to check if a file is executable.',
+253 silly install resolved     main: 'index.js',
+253 silly install resolved     directories: { test: 'test' },
+253 silly install resolved     devDependencies: { mkdirp: '^0.5.1', rimraf: '^2.5.0', tap: '^10.3.0' },
+253 silly install resolved     scripts:
+253 silly install resolved      { test: 'tap test/*.js --100',
+253 silly install resolved        preversion: 'npm test',
+253 silly install resolved        postversion: 'npm publish',
+253 silly install resolved        postpublish: 'git push origin --all; git push origin --tags' },
+253 silly install resolved     author:
+253 silly install resolved      { name: 'Isaac Z. Schlueter',
+253 silly install resolved        email: 'i@izs.me',
+253 silly install resolved        url: 'http://blog.izs.me/' },
+253 silly install resolved     license: 'ISC',
+253 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/isaacs/isexe.git' },
+253 silly install resolved     keywords: [],
+253 silly install resolved     bugs: { url: 'https://github.com/isaacs/isexe/issues' },
+253 silly install resolved     homepage: 'https://github.com/isaacs/isexe#readme',
+253 silly install resolved     gitHead: '10f8be491aab2e158c7e20df64a7f90ab5b5475c',
+253 silly install resolved     _id: 'isexe@2.0.0',
+253 silly install resolved     _shasum: 'e8fbf374dc556ff8947a10dcb0572d633f2cfa10',
+253 silly install resolved     _from: 'isexe@>=2.0.0 <3.0.0',
+253 silly install resolved     _npmVersion: '4.4.2',
+253 silly install resolved     _nodeVersion: '8.0.0-pre',
+253 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+253 silly install resolved     dist:
+253 silly install resolved      { shasum: 'e8fbf374dc556ff8947a10dcb0572d633f2cfa10',
+253 silly install resolved        tarball: 'https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz' },
+253 silly install resolved     maintainers: [ [Object] ],
+253 silly install resolved     _npmOperationalInternal:
+253 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+253 silly install resolved        tmp: 'tmp/isexe-2.0.0.tgz_1490230396126_0.8949183595832437' },
+253 silly install resolved     _resolved: 'https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz',
+253 silly install resolved     readme: 'ERROR: No README data found!' } ]
+254 info install isexe@2.0.0 into E:\speakingtest\node_modules\mpg321\node_modules\which
+255 info installOne isexe@2.0.0
+256 verbose installOne of isexe to E:\speakingtest\node_modules\mpg321\node_modules\which not in flight; installing
+257 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+258 verbose lock using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\isexe-0e952519a404c917.lock for E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe
+259 silly install write writing isexe 2.0.0 to E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe
+260 verbose unbuild node_modules\mpg321\node_modules\which\node_modules\isexe
+261 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe is being purged from base E:\speakingtest
+262 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe
+263 verbose tar unpack C:\Users\jowell\AppData\Roaming\npm-cache\isexe\2.0.0\package.tgz
+264 verbose tar unpacking to E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe
+265 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe is being purged
+266 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe
+267 silly gunzTarPerm modes [ '777', '666' ]
+268 silly gunzTarPerm extractEntry package.json
+269 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+270 silly gunzTarPerm extractEntry .npmignore
+271 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+272 silly gunzTarPerm extractEntry README.md
+273 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+274 silly gunzTarPerm extractEntry LICENSE
+275 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+276 silly gunzTarPerm extractEntry windows.js
+277 silly gunzTarPerm modified mode [ 'windows.js', 420, 438 ]
+278 silly gunzTarPerm extractEntry index.js
+279 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+280 silly gunzTarPerm extractEntry mode.js
+281 silly gunzTarPerm modified mode [ 'mode.js', 420, 438 ]
+282 verbose write writing to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\package.json
+283 silly gunzTarPerm extractEntry test/basic.js
+284 silly gunzTarPerm modified mode [ 'test/basic.js', 420, 438 ]
+285 info preinstall event-stream@3.3.4
+286 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\package.json
+287 silly prepareForInstallMany adding through@~2.3.1 from event-stream dependencies
+288 silly prepareForInstallMany adding duplexer@~0.1.1 from event-stream dependencies
+289 silly prepareForInstallMany adding from@~0 from event-stream dependencies
+290 silly prepareForInstallMany adding map-stream@~0.1.0 from event-stream dependencies
+291 silly prepareForInstallMany adding pause-stream@0.0.11 from event-stream dependencies
+292 silly prepareForInstallMany adding split@0.3 from event-stream dependencies
+293 silly prepareForInstallMany adding stream-combiner@~0.0.4 from event-stream dependencies
+294 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\package.json
+295 silly cache add args [ 'through@~2.3.1', null ]
+296 verbose cache add spec through@~2.3.1
+297 silly cache add args [ 'duplexer@~0.1.1', null ]
+298 verbose cache add spec duplexer@~0.1.1
+299 silly cache add parsed spec Result {
+299 silly cache add   raw: 'through@~2.3.1',
+299 silly cache add   scope: null,
+299 silly cache add   name: 'through',
+299 silly cache add   rawSpec: '~2.3.1',
+299 silly cache add   spec: '>=2.3.1 <2.4.0',
+299 silly cache add   type: 'range' }
+300 silly addNamed through@>=2.3.1 <2.4.0
+301 verbose addNamed ">=2.3.1 <2.4.0" is a valid semver range for through
+302 silly addNameRange { name: 'through', range: '>=2.3.1 <2.4.0', hasData: false }
+303 silly mapToRegistry name through
+304 silly mapToRegistry using default registry
+305 silly mapToRegistry registry https://registry.npmjs.org/
+306 silly mapToRegistry data Result {
+306 silly mapToRegistry   raw: 'through',
+306 silly mapToRegistry   scope: null,
+306 silly mapToRegistry   name: 'through',
+306 silly mapToRegistry   rawSpec: '',
+306 silly mapToRegistry   spec: 'latest',
+306 silly mapToRegistry   type: 'tag' }
+307 silly mapToRegistry uri https://registry.npmjs.org/through
+308 verbose addNameRange registry:https://registry.npmjs.org/through not in flight; fetching
+309 silly cache add parsed spec Result {
+309 silly cache add   raw: 'duplexer@~0.1.1',
+309 silly cache add   scope: null,
+309 silly cache add   name: 'duplexer',
+309 silly cache add   rawSpec: '~0.1.1',
+309 silly cache add   spec: '>=0.1.1 <0.2.0',
+309 silly cache add   type: 'range' }
+310 silly addNamed duplexer@>=0.1.1 <0.2.0
+311 verbose addNamed ">=0.1.1 <0.2.0" is a valid semver range for duplexer
+312 silly addNameRange { name: 'duplexer', range: '>=0.1.1 <0.2.0', hasData: false }
+313 silly mapToRegistry name duplexer
+314 silly mapToRegistry using default registry
+315 silly mapToRegistry registry https://registry.npmjs.org/
+316 silly mapToRegistry data Result {
+316 silly mapToRegistry   raw: 'duplexer',
+316 silly mapToRegistry   scope: null,
+316 silly mapToRegistry   name: 'duplexer',
+316 silly mapToRegistry   rawSpec: '',
+316 silly mapToRegistry   spec: 'latest',
+316 silly mapToRegistry   type: 'tag' }
+317 silly mapToRegistry uri https://registry.npmjs.org/duplexer
+318 verbose addNameRange registry:https://registry.npmjs.org/duplexer not in flight; fetching
+319 silly cache add args [ 'from@~0', null ]
+320 verbose cache add spec from@~0
+321 silly cache add parsed spec Result {
+321 silly cache add   raw: 'from@~0',
+321 silly cache add   scope: null,
+321 silly cache add   name: 'from',
+321 silly cache add   rawSpec: '~0',
+321 silly cache add   spec: '>=0.0.0 <1.0.0',
+321 silly cache add   type: 'range' }
+322 silly addNamed from@>=0.0.0 <1.0.0
+323 verbose addNamed ">=0.0.0 <1.0.0" is a valid semver range for from
+324 silly addNameRange { name: 'from', range: '>=0.0.0 <1.0.0', hasData: false }
+325 silly mapToRegistry name from
+326 silly mapToRegistry using default registry
+327 silly mapToRegistry registry https://registry.npmjs.org/
+328 silly mapToRegistry data Result {
+328 silly mapToRegistry   raw: 'from',
+328 silly mapToRegistry   scope: null,
+328 silly mapToRegistry   name: 'from',
+328 silly mapToRegistry   rawSpec: '',
+328 silly mapToRegistry   spec: 'latest',
+328 silly mapToRegistry   type: 'tag' }
+329 silly mapToRegistry uri https://registry.npmjs.org/from
+330 verbose addNameRange registry:https://registry.npmjs.org/from not in flight; fetching
+331 silly cache add args [ 'map-stream@~0.1.0', null ]
+332 verbose cache add spec map-stream@~0.1.0
+333 silly cache add parsed spec Result {
+333 silly cache add   raw: 'map-stream@~0.1.0',
+333 silly cache add   scope: null,
+333 silly cache add   name: 'map-stream',
+333 silly cache add   rawSpec: '~0.1.0',
+333 silly cache add   spec: '>=0.1.0 <0.2.0',
+333 silly cache add   type: 'range' }
+334 silly addNamed map-stream@>=0.1.0 <0.2.0
+335 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for map-stream
+336 silly addNameRange { name: 'map-stream', range: '>=0.1.0 <0.2.0', hasData: false }
+337 silly mapToRegistry name map-stream
+338 silly mapToRegistry using default registry
+339 silly mapToRegistry registry https://registry.npmjs.org/
+340 silly mapToRegistry data Result {
+340 silly mapToRegistry   raw: 'map-stream',
+340 silly mapToRegistry   scope: null,
+340 silly mapToRegistry   name: 'map-stream',
+340 silly mapToRegistry   rawSpec: '',
+340 silly mapToRegistry   spec: 'latest',
+340 silly mapToRegistry   type: 'tag' }
+341 silly mapToRegistry uri https://registry.npmjs.org/map-stream
+342 verbose addNameRange registry:https://registry.npmjs.org/map-stream not in flight; fetching
+343 silly cache add args [ 'pause-stream@0.0.11', null ]
+344 verbose cache add spec pause-stream@0.0.11
+345 silly cache add parsed spec Result {
+345 silly cache add   raw: 'pause-stream@0.0.11',
+345 silly cache add   scope: null,
+345 silly cache add   name: 'pause-stream',
+345 silly cache add   rawSpec: '0.0.11',
+345 silly cache add   spec: '0.0.11',
+345 silly cache add   type: 'version' }
+346 silly addNamed pause-stream@0.0.11
+347 verbose addNamed "0.0.11" is a plain semver version for pause-stream
+348 silly mapToRegistry name pause-stream
+349 silly mapToRegistry using default registry
+350 silly mapToRegistry registry https://registry.npmjs.org/
+351 silly mapToRegistry data Result {
+351 silly mapToRegistry   raw: 'pause-stream',
+351 silly mapToRegistry   scope: null,
+351 silly mapToRegistry   name: 'pause-stream',
+351 silly mapToRegistry   rawSpec: '',
+351 silly mapToRegistry   spec: 'latest',
+351 silly mapToRegistry   type: 'tag' }
+352 silly mapToRegistry uri https://registry.npmjs.org/pause-stream
+353 verbose addNameVersion registry:https://registry.npmjs.org/pause-stream not in flight; fetching
+354 silly cache add args [ 'split@0.3', null ]
+355 verbose cache add spec split@0.3
+356 silly cache add parsed spec Result {
+356 silly cache add   raw: 'split@0.3',
+356 silly cache add   scope: null,
+356 silly cache add   name: 'split',
+356 silly cache add   rawSpec: '0.3',
+356 silly cache add   spec: '>=0.3.0 <0.4.0',
+356 silly cache add   type: 'range' }
+357 silly addNamed split@>=0.3.0 <0.4.0
+358 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for split
+359 silly addNameRange { name: 'split', range: '>=0.3.0 <0.4.0', hasData: false }
+360 silly mapToRegistry name split
+361 silly mapToRegistry using default registry
+362 silly mapToRegistry registry https://registry.npmjs.org/
+363 silly mapToRegistry data Result {
+363 silly mapToRegistry   raw: 'split',
+363 silly mapToRegistry   scope: null,
+363 silly mapToRegistry   name: 'split',
+363 silly mapToRegistry   rawSpec: '',
+363 silly mapToRegistry   spec: 'latest',
+363 silly mapToRegistry   type: 'tag' }
+364 silly mapToRegistry uri https://registry.npmjs.org/split
+365 verbose addNameRange registry:https://registry.npmjs.org/split not in flight; fetching
+366 silly cache add args [ 'stream-combiner@~0.0.4', null ]
+367 verbose cache add spec stream-combiner@~0.0.4
+368 silly cache add parsed spec Result {
+368 silly cache add   raw: 'stream-combiner@~0.0.4',
+368 silly cache add   scope: null,
+368 silly cache add   name: 'stream-combiner',
+368 silly cache add   rawSpec: '~0.0.4',
+368 silly cache add   spec: '>=0.0.4 <0.1.0',
+368 silly cache add   type: 'range' }
+369 silly addNamed stream-combiner@>=0.0.4 <0.1.0
+370 verbose addNamed ">=0.0.4 <0.1.0" is a valid semver range for stream-combiner
+371 silly addNameRange { name: 'stream-combiner',
+371 silly addNameRange   range: '>=0.0.4 <0.1.0',
+371 silly addNameRange   hasData: false }
+372 silly mapToRegistry name stream-combiner
+373 silly mapToRegistry using default registry
+374 silly mapToRegistry registry https://registry.npmjs.org/
+375 silly mapToRegistry data Result {
+375 silly mapToRegistry   raw: 'stream-combiner',
+375 silly mapToRegistry   scope: null,
+375 silly mapToRegistry   name: 'stream-combiner',
+375 silly mapToRegistry   rawSpec: '',
+375 silly mapToRegistry   spec: 'latest',
+375 silly mapToRegistry   type: 'tag' }
+376 silly mapToRegistry uri https://registry.npmjs.org/stream-combiner
+377 verbose addNameRange registry:https://registry.npmjs.org/stream-combiner not in flight; fetching
+378 verbose request uri https://registry.npmjs.org/through
+379 verbose request no auth needed
+380 info attempt registry request try #1 at 4:58:25 PM
+381 verbose etag "5a77ede2-7508"
+382 verbose lastModified Mon, 5 Feb 2018 5:38:42 GMT
+383 http request GET https://registry.npmjs.org/through
+384 verbose request uri https://registry.npmjs.org/duplexer
+385 verbose request no auth needed
+386 info attempt registry request try #1 at 4:58:25 PM
+387 verbose etag "5a70fde1-3059"
+388 verbose lastModified Tue, 30 Jan 2018 23:21:05 GMT
+389 http request GET https://registry.npmjs.org/duplexer
+390 verbose request uri https://registry.npmjs.org/from
+391 verbose request no auth needed
+392 info attempt registry request try #1 at 4:58:25 PM
+393 verbose etag "58c47313-1d3d"
+394 verbose lastModified Sat, 11 Mar 2017 21:58:43 GMT
+395 http request GET https://registry.npmjs.org/from
+396 verbose request uri https://registry.npmjs.org/map-stream
+397 verbose request no auth needed
+398 info attempt registry request try #1 at 4:58:25 PM
+399 verbose etag "5a414a59-2732"
+400 verbose lastModified Mon, 25 Dec 2017 18:58:33 GMT
+401 http request GET https://registry.npmjs.org/map-stream
+402 verbose request uri https://registry.npmjs.org/pause-stream
+403 verbose request no auth needed
+404 info attempt registry request try #1 at 4:58:25 PM
+405 verbose etag "523cc827-439e"
+406 verbose lastModified Fri, 20 Sep 2013 22:11:51 GMT
+407 http request GET https://registry.npmjs.org/pause-stream
+408 verbose request uri https://registry.npmjs.org/stream-combiner
+409 verbose request no auth needed
+410 info attempt registry request try #1 at 4:58:25 PM
+411 verbose etag "58d3541c-2ca4"
+412 verbose lastModified Thu, 23 Mar 2017 4:50:36 GMT
+413 http request GET https://registry.npmjs.org/stream-combiner
+414 verbose request uri https://registry.npmjs.org/split
+415 verbose request no auth needed
+416 info attempt registry request try #1 at 4:58:25 PM
+417 verbose etag "5a55be39-5bca"
+418 verbose lastModified Wed, 10 Jan 2018 7:18:17 GMT
+419 http request GET https://registry.npmjs.org/split
+420 http 304 https://registry.npmjs.org/through
+421 verbose headers { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+421 verbose headers   via: '1.1 varnish',
+421 verbose headers   'cache-control': 'max-age=300',
+421 verbose headers   etag: '"5a77ede2-7508"',
+421 verbose headers   age: '14265',
+421 verbose headers   connection: 'keep-alive',
+421 verbose headers   'x-served-by': 'cache-bos8230-BOS',
+421 verbose headers   'x-cache': 'HIT',
+421 verbose headers   'x-cache-hits': '2',
+421 verbose headers   'x-timer': 'S1523912306.853523,VS0,VE0',
+421 verbose headers   vary: 'Accept-Encoding, Accept' }
+422 silly get cb [ 304,
+422 silly get   { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+422 silly get     via: '1.1 varnish',
+422 silly get     'cache-control': 'max-age=300',
+422 silly get     etag: '"5a77ede2-7508"',
+422 silly get     age: '14265',
+422 silly get     connection: 'keep-alive',
+422 silly get     'x-served-by': 'cache-bos8230-BOS',
+422 silly get     'x-cache': 'HIT',
+422 silly get     'x-cache-hits': '2',
+422 silly get     'x-timer': 'S1523912306.853523,VS0,VE0',
+422 silly get     vary: 'Accept-Encoding, Accept' } ]
+423 verbose etag https://registry.npmjs.org/through from cache
+424 verbose get saving through to C:\Users\jowell\AppData\Roaming\npm-cache\registry.npmjs.org\through\.cache.json
+425 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+426 http 304 https://registry.npmjs.org/duplexer
+427 verbose headers { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+427 verbose headers   via: '1.1 varnish',
+427 verbose headers   'cache-control': 'max-age=300',
+427 verbose headers   etag: '"5a70fde1-3059"',
+427 verbose headers   age: '14181',
+427 verbose headers   connection: 'keep-alive',
+427 verbose headers   'x-served-by': 'cache-bos8233-BOS',
+427 verbose headers   'x-cache': 'HIT',
+427 verbose headers   'x-cache-hits': '130',
+427 verbose headers   'x-timer': 'S1523912306.860287,VS0,VE0',
+427 verbose headers   vary: 'Accept-Encoding, Accept' }
+428 silly get cb [ 304,
+428 silly get   { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+428 silly get     via: '1.1 varnish',
+428 silly get     'cache-control': 'max-age=300',
+428 silly get     etag: '"5a70fde1-3059"',
+428 silly get     age: '14181',
+428 silly get     connection: 'keep-alive',
+428 silly get     'x-served-by': 'cache-bos8233-BOS',
+428 silly get     'x-cache': 'HIT',
+428 silly get     'x-cache-hits': '130',
+428 silly get     'x-timer': 'S1523912306.860287,VS0,VE0',
+428 silly get     vary: 'Accept-Encoding, Accept' } ]
+429 verbose etag https://registry.npmjs.org/duplexer from cache
+430 verbose get saving duplexer to C:\Users\jowell\AppData\Roaming\npm-cache\registry.npmjs.org\duplexer\.cache.json
+431 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+432 silly addNameRange number 2 { name: 'through', range: '>=2.3.1 <2.4.0', hasData: true }
+433 silly addNameRange versions [ 'through',
+433 silly addNameRange   [ '0.0.1',
+433 silly addNameRange     '0.0.2',
+433 silly addNameRange     '0.0.3',
+433 silly addNameRange     '0.0.4',
+433 silly addNameRange     '0.1.0',
+433 silly addNameRange     '0.1.1',
+433 silly addNameRange     '0.1.2',
+433 silly addNameRange     '0.1.3',
+433 silly addNameRange     '0.1.4',
+433 silly addNameRange     '1.0.0',
+433 silly addNameRange     '1.1.0',
+433 silly addNameRange     '1.1.1',
+433 silly addNameRange     '1.1.2',
+433 silly addNameRange     '2.0.0',
+433 silly addNameRange     '2.1.0',
+433 silly addNameRange     '2.2.0',
+433 silly addNameRange     '2.2.1',
+433 silly addNameRange     '2.2.2',
+433 silly addNameRange     '2.2.4',
+433 silly addNameRange     '2.2.5',
+433 silly addNameRange     '2.2.6',
+433 silly addNameRange     '2.2.7',
+433 silly addNameRange     '2.3.1',
+433 silly addNameRange     '2.3.2',
+433 silly addNameRange     '2.3.3',
+433 silly addNameRange     '2.3.4',
+433 silly addNameRange     '2.3.6',
+433 silly addNameRange     '2.3.7',
+433 silly addNameRange     '2.3.8' ] ]
+434 silly addNamed through@2.3.8
+435 verbose addNamed "2.3.8" is a plain semver version for through
+436 silly cache afterAdd through@2.3.8
+437 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\through\2.3.8\package\package.json not in flight; writing
+438 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+439 silly addNameRange number 2 { name: 'duplexer', range: '>=0.1.1 <0.2.0', hasData: true }
+440 silly addNameRange versions [ 'duplexer',
+440 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.1.0', '0.1.1' ] ]
+441 silly addNamed duplexer@0.1.1
+442 verbose addNamed "0.1.1" is a plain semver version for duplexer
+443 verbose write writing to E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe\package.json
+444 silly cache afterAdd duplexer@0.1.1
+445 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\duplexer\0.1.1\package\package.json not in flight; writing
+446 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+447 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\through\2.3.8\package\package.json written
+448 info preinstall isexe@2.0.0
+449 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe\package.json
+450 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\duplexer\0.1.1\package\package.json written
+451 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe\package.json
+452 silly install resolved []
+453 verbose about to build E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe
+454 info build E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe
+455 info linkStuff isexe@2.0.0
+456 silly linkStuff isexe@2.0.0 has E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules as its parent node_modules
+457 verbose linkBins isexe@2.0.0
+458 verbose linkMans isexe@2.0.0
+459 verbose rebuildBundles isexe@2.0.0
+460 info install isexe@2.0.0
+461 info postinstall isexe@2.0.0
+462 verbose unlock done using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\isexe-0e952519a404c917.lock for E:\speakingtest\node_modules\mpg321\node_modules\which\node_modules\isexe
+463 verbose about to build E:\speakingtest\node_modules\mpg321\node_modules\which
+464 info build E:\speakingtest\node_modules\mpg321\node_modules\which
+465 http 304 https://registry.npmjs.org/from
+466 verbose headers { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+466 verbose headers   via: '1.1 varnish',
+466 verbose headers   'cache-control': 'max-age=300',
+466 verbose headers   etag: '"58c47313-1d3d"',
+466 verbose headers   age: '8273',
+466 verbose headers   connection: 'keep-alive',
+466 verbose headers   'x-served-by': 'cache-bos8221-BOS',
+466 verbose headers   'x-cache': 'HIT',
+466 verbose headers   'x-cache-hits': '1',
+466 verbose headers   'x-timer': 'S1523912306.912112,VS0,VE1',
+466 verbose headers   vary: 'Accept-Encoding, Accept' }
+467 silly get cb [ 304,
+467 silly get   { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+467 silly get     via: '1.1 varnish',
+467 silly get     'cache-control': 'max-age=300',
+467 silly get     etag: '"58c47313-1d3d"',
+467 silly get     age: '8273',
+467 silly get     connection: 'keep-alive',
+467 silly get     'x-served-by': 'cache-bos8221-BOS',
+467 silly get     'x-cache': 'HIT',
+467 silly get     'x-cache-hits': '1',
+467 silly get     'x-timer': 'S1523912306.912112,VS0,VE1',
+467 silly get     vary: 'Accept-Encoding, Accept' } ]
+468 verbose etag https://registry.npmjs.org/from from cache
+469 verbose get saving from to C:\Users\jowell\AppData\Roaming\npm-cache\registry.npmjs.org\from\.cache.json
+470 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+471 info linkStuff which@1.3.0
+472 silly linkStuff which@1.3.0 has E:\speakingtest\node_modules\mpg321\node_modules as its parent node_modules
+473 verbose linkBins which@1.3.0
+474 verbose link bins [ { which: './bin/which' },
+474 verbose link bins   'E:\\speakingtest\\node_modules\\mpg321\\node_modules\\.bin',
+474 verbose link bins   false ]
+475 verbose linkMans which@1.3.0
+476 verbose rebuildBundles which@1.3.0
+477 verbose rebuildBundles [ 'isexe' ]
+478 http 304 https://registry.npmjs.org/map-stream
+479 verbose headers { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+479 verbose headers   via: '1.1 varnish',
+479 verbose headers   'cache-control': 'max-age=300',
+479 verbose headers   etag: '"5a414a59-2732"',
+479 verbose headers   age: '4875',
+479 verbose headers   connection: 'keep-alive',
+479 verbose headers   'x-served-by': 'cache-bos8234-BOS',
+479 verbose headers   'x-cache': 'HIT',
+479 verbose headers   'x-cache-hits': '1',
+479 verbose headers   'x-timer': 'S1523912306.918562,VS0,VE0',
+479 verbose headers   vary: 'Accept-Encoding, Accept' }
+480 silly get cb [ 304,
+480 silly get   { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+480 silly get     via: '1.1 varnish',
+480 silly get     'cache-control': 'max-age=300',
+480 silly get     etag: '"5a414a59-2732"',
+480 silly get     age: '4875',
+480 silly get     connection: 'keep-alive',
+480 silly get     'x-served-by': 'cache-bos8234-BOS',
+480 silly get     'x-cache': 'HIT',
+480 silly get     'x-cache-hits': '1',
+480 silly get     'x-timer': 'S1523912306.918562,VS0,VE0',
+480 silly get     vary: 'Accept-Encoding, Accept' } ]
+481 verbose etag https://registry.npmjs.org/map-stream from cache
+482 verbose get saving map-stream to C:\Users\jowell\AppData\Roaming\npm-cache\registry.npmjs.org\map-stream\.cache.json
+483 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+484 http 304 https://registry.npmjs.org/split
+485 verbose headers { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+485 verbose headers   via: '1.1 varnish',
+485 verbose headers   'cache-control': 'max-age=300',
+485 verbose headers   etag: '"5a55be39-5bca"',
+485 verbose headers   age: '4858',
+485 verbose headers   connection: 'keep-alive',
+485 verbose headers   'x-served-by': 'cache-bos8223-BOS',
+485 verbose headers   'x-cache': 'HIT',
+485 verbose headers   'x-cache-hits': '3',
+485 verbose headers   'x-timer': 'S1523912306.924881,VS0,VE0',
+485 verbose headers   vary: 'Accept-Encoding, Accept' }
+486 silly get cb [ 304,
+486 silly get   { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+486 silly get     via: '1.1 varnish',
+486 silly get     'cache-control': 'max-age=300',
+486 silly get     etag: '"5a55be39-5bca"',
+486 silly get     age: '4858',
+486 silly get     connection: 'keep-alive',
+486 silly get     'x-served-by': 'cache-bos8223-BOS',
+486 silly get     'x-cache': 'HIT',
+486 silly get     'x-cache-hits': '3',
+486 silly get     'x-timer': 'S1523912306.924881,VS0,VE0',
+486 silly get     vary: 'Accept-Encoding, Accept' } ]
+487 verbose etag https://registry.npmjs.org/split from cache
+488 verbose get saving split to C:\Users\jowell\AppData\Roaming\npm-cache\registry.npmjs.org\split\.cache.json
+489 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+490 http 304 https://registry.npmjs.org/pause-stream
+491 verbose headers { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+491 verbose headers   via: '1.1 varnish',
+491 verbose headers   'cache-control': 'max-age=300',
+491 verbose headers   etag: '"523cc827-439e"',
+491 verbose headers   age: '11910',
+491 verbose headers   connection: 'keep-alive',
+491 verbose headers   'x-served-by': 'cache-bos8226-BOS',
+491 verbose headers   'x-cache': 'HIT',
+491 verbose headers   'x-cache-hits': '1',
+491 verbose headers   'x-timer': 'S1523912306.925437,VS0,VE1',
+491 verbose headers   vary: 'Accept-Encoding, Accept' }
+492 silly get cb [ 304,
+492 silly get   { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+492 silly get     via: '1.1 varnish',
+492 silly get     'cache-control': 'max-age=300',
+492 silly get     etag: '"523cc827-439e"',
+492 silly get     age: '11910',
+492 silly get     connection: 'keep-alive',
+492 silly get     'x-served-by': 'cache-bos8226-BOS',
+492 silly get     'x-cache': 'HIT',
+492 silly get     'x-cache-hits': '1',
+492 silly get     'x-timer': 'S1523912306.925437,VS0,VE1',
+492 silly get     vary: 'Accept-Encoding, Accept' } ]
+493 verbose etag https://registry.npmjs.org/pause-stream from cache
+494 verbose get saving pause-stream to C:\Users\jowell\AppData\Roaming\npm-cache\registry.npmjs.org\pause-stream\.cache.json
+495 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+496 silly addNameRange number 2 { name: 'from', range: '>=0.0.0 <1.0.0', hasData: true }
+497 silly addNameRange versions [ 'from',
+497 silly addNameRange   [ '0.0.0', '0.0.1', '0.0.2', '0.1.1', '0.1.2', '0.1.3', '0.1.7' ] ]
+498 silly addNamed from@0.1.7
+499 verbose addNamed "0.1.7" is a plain semver version for from
+500 http 304 https://registry.npmjs.org/stream-combiner
+501 verbose headers { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+501 verbose headers   via: '1.1 varnish',
+501 verbose headers   'cache-control': 'max-age=300',
+501 verbose headers   etag: '"58d3541c-2ca4"',
+501 verbose headers   age: '12023',
+501 verbose headers   connection: 'keep-alive',
+501 verbose headers   'x-served-by': 'cache-bos8233-BOS',
+501 verbose headers   'x-cache': 'HIT',
+501 verbose headers   'x-cache-hits': '1',
+501 verbose headers   'x-timer': 'S1523912306.925553,VS0,VE0',
+501 verbose headers   vary: 'Accept-Encoding, Accept' }
+502 silly get cb [ 304,
+502 silly get   { date: 'Mon, 16 Apr 2018 20:58:25 GMT',
+502 silly get     via: '1.1 varnish',
+502 silly get     'cache-control': 'max-age=300',
+502 silly get     etag: '"58d3541c-2ca4"',
+502 silly get     age: '12023',
+502 silly get     connection: 'keep-alive',
+502 silly get     'x-served-by': 'cache-bos8233-BOS',
+502 silly get     'x-cache': 'HIT',
+502 silly get     'x-cache-hits': '1',
+502 silly get     'x-timer': 'S1523912306.925553,VS0,VE0',
+502 silly get     vary: 'Accept-Encoding, Accept' } ]
+503 verbose etag https://registry.npmjs.org/stream-combiner from cache
+504 verbose get saving stream-combiner to C:\Users\jowell\AppData\Roaming\npm-cache\registry.npmjs.org\stream-combiner\.cache.json
+505 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+506 info install which@1.3.0
+507 info postinstall which@1.3.0
+508 silly cache afterAdd from@0.1.7
+509 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\from\0.1.7\package\package.json not in flight; writing
+510 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+511 silly addNameRange number 2 { name: 'map-stream', range: '>=0.1.0 <0.2.0', hasData: true }
+512 silly addNameRange versions [ 'map-stream',
+512 silly addNameRange   [ '0.0.1',
+512 silly addNameRange     '0.0.2',
+512 silly addNameRange     '0.0.3',
+512 silly addNameRange     '0.0.4',
+512 silly addNameRange     '0.1.0',
+512 silly addNameRange     '0.0.5',
+512 silly addNameRange     '0.0.6',
+512 silly addNameRange     '0.0.7' ] ]
+513 silly addNamed map-stream@0.1.0
+514 verbose addNamed "0.1.0" is a plain semver version for map-stream
+515 verbose unlock done using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\which-71cf917b17b97f9b.lock for E:\speakingtest\node_modules\mpg321\node_modules\which
+516 silly addNameRange number 2 { name: 'split', range: '>=0.3.0 <0.4.0', hasData: true }
+517 silly addNameRange versions [ 'split',
+517 silly addNameRange   [ '0.0.0',
+517 silly addNameRange     '0.1.0',
+517 silly addNameRange     '0.1.1',
+517 silly addNameRange     '0.1.2',
+517 silly addNameRange     '0.2.0',
+517 silly addNameRange     '0.2.1',
+517 silly addNameRange     '0.2.3',
+517 silly addNameRange     '0.2.4',
+517 silly addNameRange     '0.2.5',
+517 silly addNameRange     '0.2.6',
+517 silly addNameRange     '0.2.7',
+517 silly addNameRange     '0.2.8',
+517 silly addNameRange     '0.2.9',
+517 silly addNameRange     '0.2.10',
+517 silly addNameRange     '0.3.0',
+517 silly addNameRange     '0.3.1',
+517 silly addNameRange     '0.3.2',
+517 silly addNameRange     '0.3.3',
+517 silly addNameRange     '1.0.0',
+517 silly addNameRange     '1.0.1' ] ]
+518 silly addNamed split@0.3.3
+519 verbose addNamed "0.3.3" is a plain semver version for split
+520 silly cache afterAdd map-stream@0.1.0
+521 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\map-stream\0.1.0\package\package.json not in flight; writing
+522 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+523 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\from\0.1.7\package\package.json written
+524 silly addNameRange number 2 { name: 'stream-combiner',
+524 silly addNameRange   range: '>=0.0.4 <0.1.0',
+524 silly addNameRange   hasData: true }
+525 silly addNameRange versions [ 'stream-combiner',
+525 silly addNameRange   [ '0.0.0',
+525 silly addNameRange     '0.0.1',
+525 silly addNameRange     '0.0.2',
+525 silly addNameRange     '0.0.4',
+525 silly addNameRange     '0.1.0',
+525 silly addNameRange     '0.2.0',
+525 silly addNameRange     '0.2.1',
+525 silly addNameRange     '0.2.2' ] ]
+526 silly addNamed stream-combiner@0.0.4
+527 verbose addNamed "0.0.4" is a plain semver version for stream-combiner
+528 silly cache afterAdd pause-stream@0.0.11
+529 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\pause-stream\0.0.11\package\package.json not in flight; writing
+530 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+531 silly cache afterAdd split@0.3.3
+532 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\split\0.3.3\package\package.json not in flight; writing
+533 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+534 silly cache afterAdd stream-combiner@0.0.4
+535 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\stream-combiner\0.0.4\package\package.json not in flight; writing
+536 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+537 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\map-stream\0.1.0\package\package.json written
+538 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\pause-stream\0.0.11\package\package.json written
+539 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\split\0.3.3\package\package.json written
+540 verbose afterAdd C:\Users\jowell\AppData\Roaming\npm-cache\stream-combiner\0.0.4\package\package.json written
+541 silly install resolved [ { name: 'through',
+541 silly install resolved     version: '2.3.8',
+541 silly install resolved     description: 'simplified stream construction',
+541 silly install resolved     main: 'index.js',
+541 silly install resolved     scripts: { test: 'set -e; for t in test/*.js; do node $t; done' },
+541 silly install resolved     devDependencies: { 'stream-spec': '~0.3.5', tape: '~2.3.2', from: '~0.1.3' },
+541 silly install resolved     keywords: [ 'stream', 'streams', 'user-streams', 'pipe' ],
+541 silly install resolved     author:
+541 silly install resolved      { name: 'Dominic Tarr',
+541 silly install resolved        email: 'dominic.tarr@gmail.com',
+541 silly install resolved        url: 'dominictarr.com' },
+541 silly install resolved     license: 'MIT',
+541 silly install resolved     repository:
+541 silly install resolved      { type: 'git',
+541 silly install resolved        url: 'git+https://github.com/dominictarr/through.git' },
+541 silly install resolved     homepage: 'https://github.com/dominictarr/through',
+541 silly install resolved     testling: { browsers: [Object], files: 'test/*.js' },
+541 silly install resolved     gitHead: '2c5a6f9a0cc54da759b6e10964f2081c358e49dc',
+541 silly install resolved     bugs: { url: 'https://github.com/dominictarr/through/issues' },
+541 silly install resolved     _id: 'through@2.3.8',
+541 silly install resolved     _shasum: '0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5',
+541 silly install resolved     _from: 'through@>=2.3.1 <2.4.0',
+541 silly install resolved     _npmVersion: '2.12.0',
+541 silly install resolved     _nodeVersion: '2.3.1',
+541 silly install resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+541 silly install resolved     maintainers: [ [Object] ],
+541 silly install resolved     dist:
+541 silly install resolved      { shasum: '0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5',
+541 silly install resolved        tarball: 'https://registry.npmjs.org/through/-/through-2.3.8.tgz' },
+541 silly install resolved     directories: {},
+541 silly install resolved     _resolved: 'https://registry.npmjs.org/through/-/through-2.3.8.tgz',
+541 silly install resolved     readme: 'ERROR: No README data found!' },
+541 silly install resolved   { name: 'duplexer',
+541 silly install resolved     version: '0.1.1',
+541 silly install resolved     description: 'Creates a duplex stream',
+541 silly install resolved     keywords: [],
+541 silly install resolved     author: { name: 'Raynos', email: 'raynos2@gmail.com' },
+541 silly install resolved     repository: { type: 'git', url: 'git://github.com/Raynos/duplexer.git' },
+541 silly install resolved     main: 'index',
+541 silly install resolved     homepage: 'https://github.com/Raynos/duplexer',
+541 silly install resolved     contributors: [ [Object] ],
+541 silly install resolved     bugs:
+541 silly install resolved      { url: 'https://github.com/Raynos/duplexer/issues',
+541 silly install resolved        email: 'raynos2@gmail.com' },
+541 silly install resolved     devDependencies: { tape: '0.3.3', through: '~0.1.4' },
+541 silly install resolved     licenses: [ [Object] ],
+541 silly install resolved     scripts: { test: 'node test' },
+541 silly install resolved     testling: { files: 'test/index.js', browsers: [Object] },
+541 silly install resolved     readme: '# duplexer\n\n[![build status][1]][2] [![dependency status][3]][4]\n\n[![browser support][5]][6]\n\nCreates a duplex stream\n\nTaken from [event-stream][7]\n\n## duplex (writeStream, readStream)\n\nTakes a writable stream and a readable stream and makes them appear as a readable writable stream.\n\nIt is assumed that the two streams are connected to each other in some way.\n\n## Example\n\n```js\nvar grep = cp.exec(\'grep Stream\')\n\nduplex(grep.stdin, grep.stdout)\n```\n\n## Installation\n\n`npm install duplexer`\n\n## Tests\n\n`npm test`\n\n## Contributors\n\n - Dominictarr\n - Raynos\n - samccone\n\n## MIT Licenced\n\n  [1]: https://secure.travis-ci.org/Raynos/duplexer.png\n  [2]: https://travis-ci.org/Raynos/duplexer\n  [3]: https://david-dm.org/Raynos/duplexer.png\n  [4]: https://david-dm.org/Raynos/duplexer\n  [5]: https://ci.testling.com/Raynos/duplexer.png\n  [6]: https://ci.testling.com/Raynos/duplexer\n  [7]: https://github.com/dominictarr/event-stream#duplex-writestream-readstream\n',
+541 silly install resolved     readmeFilename: 'README.md',
+541 silly install resolved     _id: 'duplexer@0.1.1',
+541 silly install resolved     dist:
+541 silly install resolved      { shasum: 'ace6ff808c1ce66b57d1ebf97977acb02334cfc1',
+541 silly install resolved        tarball: 'https://registry.npmjs.org/duplexer/-/duplexer-0.1.1.tgz' },
+541 silly install resolved     _from: 'duplexer@>=0.1.1 <0.2.0',
+541 silly install resolved     _npmVersion: '1.2.18',
+541 silly install resolved     _npmUser: { name: 'raynos', email: 'raynos2@gmail.com' },
+541 silly install resolved     maintainers: [ [Object], [Object] ],
+541 silly install resolved     directories: {},
+541 silly install resolved     _shasum: 'ace6ff808c1ce66b57d1ebf97977acb02334cfc1',
+541 silly install resolved     _resolved: 'https://registry.npmjs.org/duplexer/-/duplexer-0.1.1.tgz' },
+541 silly install resolved   { name: 'from',
+541 silly install resolved     version: '0.1.7',
+541 silly install resolved     description: 'Easy way to make a Readable Stream',
+541 silly install resolved     main: 'index.js',
+541 silly install resolved     scripts: { test: 'asynct test/*.js' },
+541 silly install resolved     repository: { type: 'git', url: 'git://github.com/dominictarr/from.git' },
+541 silly install resolved     keywords: [ 'stream', 'streams', 'readable', 'easy' ],
+541 silly install resolved     devDependencies: { asynct: '1', 'stream-spec': '0', assertions: '~2.3.0' },
+541 silly install resolved     author:
+541 silly install resolved      { name: 'Dominic Tarr',
+541 silly install resolved        email: 'dominic.tarr@gmail.com',
+541 silly install resolved        url: 'dominictarr.com' },
+541 silly install resolved     license: 'MIT',
+541 silly install resolved     gitHead: 'b14b530f53dccb45cad5eab62544bcdf0da918db',
+541 silly install resolved     bugs: { url: 'https://github.com/dominictarr/from/issues' },
+541 silly install resolved     homepage: 'https://github.com/dominictarr/from#readme',
+541 silly install resolved     _id: 'from@0.1.7',
+541 silly install resolved     _shasum: '83c60afc58b9c56997007ed1a768b3ab303a44fe',
+541 silly install resolved     _from: 'from@>=0.0.0 <1.0.0',
+541 silly install resolved     _npmVersion: '3.10.10',
+541 silly install resolved     _nodeVersion: '6.9.4',
+541 silly install resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+541 silly install resolved     dist:
+541 silly install resolved      { shasum: '83c60afc58b9c56997007ed1a768b3ab303a44fe',
+541 silly install resolved        tarball: 'https://registry.npmjs.org/from/-/from-0.1.7.tgz' },
+541 silly install resolved     maintainers: [ [Object] ],
+541 silly install resolved     _npmOperationalInternal:
+541 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+541 silly install resolved        tmp: 'tmp/from-0.1.7.tgz_1489269523077_0.6877304948866367' },
+541 silly install resolved     directories: {},
+541 silly install resolved     _resolved: 'https://registry.npmjs.org/from/-/from-0.1.7.tgz',
+541 silly install resolved     readme: 'ERROR: No README data found!' },
+541 silly install resolved   { name: 'map-stream',
+541 silly install resolved     version: '0.1.0',
+541 silly install resolved     description: 'construct pipes of streams of events',
+541 silly install resolved     homepage: 'http://github.com/dominictarr/map-stream',
+541 silly install resolved     repository:
+541 silly install resolved      { type: 'git',
+541 silly install resolved        url: 'git://github.com/dominictarr/map-stream.git' },
+541 silly install resolved     dependencies: {},
+541 silly install resolved     devDependencies:
+541 silly install resolved      { asynct: '*',
+541 silly install resolved        'it-is': '1',
+541 silly install resolved        ubelt: '~2.9',
+541 silly install resolved        'stream-spec': '~0.2',
+541 silly install resolved        'event-stream': '~2.1',
+541 silly install resolved        from: '0.0.2' },
+541 silly install resolved     scripts: { test: 'asynct test/' },
+541 silly install resolved     author:
+541 silly install resolved      { name: 'Dominic Tarr',
+541 silly install resolved        email: 'dominic.tarr@gmail.com',
+541 silly install resolved        url: 'http://dominictarr.com' },
+541 silly install resolved     bugs: { url: 'https://github.com/dominictarr/map-stream/issues' },
+541 silly install resolved     _id: 'map-stream@0.1.0',
+541 silly install resolved     dist:
+541 silly install resolved      { shasum: 'e56aa94c4c8055a16404a0674b78f215f7c8e194',
+541 silly install resolved        tarball: 'https://registry.npmjs.org/map-stream/-/map-stream-0.1.0.tgz' },
+541 silly install resolved     _from: 'map-stream@>=0.1.0 <0.2.0',
+541 silly install resolved     _npmVersion: '1.3.21',
+541 silly install resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+541 silly install resolved     maintainers: [ [Object] ],
+541 silly install resolved     directories: {},
+541 silly install resolved     _shasum: 'e56aa94c4c8055a16404a0674b78f215f7c8e194',
+541 silly install resolved     _resolved: 'https://registry.npmjs.org/map-stream/-/map-stream-0.1.0.tgz',
+541 silly install resolved     readme: 'ERROR: No README data found!' },
+541 silly install resolved   { name: 'pause-stream',
+541 silly install resolved     version: '0.0.11',
+541 silly install resolved     description: 'a ThroughStream that strictly buffers all readable events when paused.',
+541 silly install resolved     main: 'index.js',
+541 silly install resolved     directories: { test: 'test' },
+541 silly install resolved     devDependencies: { 'stream-tester': '0.0.2', 'stream-spec': '~0.2.0' },
+541 silly install resolved     scripts: { test: 'node test/index.js && node test/pause-end.js' },
+541 silly install resolved     repository:
+541 silly install resolved      { type: 'git',
+541 silly install resolved        url: 'git://github.com/dominictarr/pause-stream.git' },
+541 silly install resolved     keywords: [ 'stream', 'pipe', 'pause', 'drain', 'buffer' ],
+541 silly install resolved     author:
+541 silly install resolved      { name: 'Dominic Tarr',
+541 silly install resolved        email: 'dominic.tarr@gmail.com',
+541 silly install resolved        url: 'dominictarr.com' },
+541 silly install resolved     license: [ 'MIT', 'Apache2' ],
+541 silly install resolved     dependencies: { through: '~2.3' },
+541 silly install resolved     readme: '# PauseStream\n\nThis is a `Stream` that will strictly buffer when paused.\nConnect it to anything you need buffered.\n\n``` js\n  var ps = require(\'pause-stream\')();\n\n  badlyBehavedStream.pipe(ps.pause())\n\n  aLittleLater(function (err, data) {\n    ps.pipe(createAnotherStream(data))\n    ps.resume()\n  })\n```\n\n`PauseStream` will buffer whenever paused.\nit will buffer when yau have called `pause` manually.\nbut also when it\'s downstream `dest.write()===false`.\nit will attempt to drain the buffer when you call resume\nor the downstream emits `\'drain\'`\n\n`PauseStream` is tested using [stream-spec](https://github.com/dominictarr/stream-spec)\nand [stream-tester](https://github.com/dominictarr/stream-tester)\n\nThis is now the default case of \n[through](https://github.com/dominictarr/through)\n\nhttps://github.com/dominictarr/pause-stream/commit/4a6fe3dc2c11091b1efbfde912e0473719ed9cc0\n',
+541 silly install resolved     readmeFilename: 'readme.markdown',
+541 silly install resolved     bugs: { url: 'https://github.com/dominictarr/pause-stream/issues' },
+541 silly install resolved     _id: 'pause-stream@0.0.11',
+541 silly install resolved     dist:
+541 silly install resolved      { shasum: 'fe5a34b0cbce12b5aa6a2b403ee2e73b602f1445',
+541 silly install resolved        tarball: 'https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz' },
+541 silly install resolved     _from: 'pause-stream@0.0.11',
+541 silly install resolved     _npmVersion: '1.3.6',
+541 silly install resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+541 silly install resolved     maintainers: [ [Object] ],
+541 silly install resolved     _shasum: 'fe5a34b0cbce12b5aa6a2b403ee2e73b602f1445',
+541 silly install resolved     _resolved: 'https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz',
+541 silly install resolved     homepage: 'https://github.com/dominictarr/pause-stream#readme' },
+541 silly install resolved   { name: 'split',
+541 silly install resolved     version: '0.3.3',
+541 silly install resolved     license: 'MIT',
+541 silly install resolved     description: 'split a Text Stream into a Line Stream',
+541 silly install resolved     homepage: 'http://github.com/dominictarr/split',
+541 silly install resolved     repository: { type: 'git', url: 'git://github.com/dominictarr/split.git' },
+541 silly install resolved     dependencies: { through: '2' },
+541 silly install resolved     devDependencies:
+541 silly install resolved      { asynct: '*',
+541 silly install resolved        'event-stream': '~3.0.2',
+541 silly install resolved        'it-is': '1',
+541 silly install resolved        'stream-spec': '~0.2',
+541 silly install resolved        ubelt: '~2.9',
+541 silly install resolved        'string-to-stream': '~1.0.0' },
+541 silly install resolved     scripts: { test: 'asynct test/' },
+541 silly install resolved     author:
+541 silly install resolved      { name: 'Dominic Tarr',
+541 silly install resolved        email: 'dominic.tarr@gmail.com',
+541 silly install resolved        url: 'http://bit.ly/dominictarr' },
+541 silly install resolved     optionalDependencies: {},
+541 silly install resolved     engines: { node: '*' },
+541 silly install resolved     gitHead: '3fe392ef2aabce9db7abe8185ec48389ae224883',
+541 silly install resolved     bugs: { url: 'https://github.com/dominictarr/split/issues' },
+541 silly install resolved     _id: 'split@0.3.3',
+541 silly install resolved     _shasum: 'cd0eea5e63a211dfff7eb0f091c4133e2d0dd28f',
+541 silly install resolved     _from: 'split@>=0.3.0 <0.4.0',
+541 silly install resolved     _npmVersion: '2.2.0',
+541 silly install resolved     _nodeVersion: '0.10.35',
+541 silly install resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+541 silly install resolved     maintainers: [ [Object] ],
+541 silly install resolved     dist:
+541 silly install resolved      { shasum: 'cd0eea5e63a211dfff7eb0f091c4133e2d0dd28f',
+541 silly install resolved        tarball: 'https://registry.npmjs.org/split/-/split-0.3.3.tgz' },
+541 silly install resolved     directories: {},
+541 silly install resolved     _resolved: 'https://registry.npmjs.org/split/-/split-0.3.3.tgz',
+541 silly install resolved     readme: 'ERROR: No README data found!' },
+541 silly install resolved   { name: 'stream-combiner',
+541 silly install resolved     version: '0.0.4',
+541 silly install resolved     homepage: 'https://github.com/dominictarr/stream-combiner',
+541 silly install resolved     repository:
+541 silly install resolved      { type: 'git',
+541 silly install resolved        url: 'git://github.com/dominictarr/stream-combiner.git' },
+541 silly install resolved     dependencies: { duplexer: '~0.1.1' },
+541 silly install resolved     devDependencies: { tape: '~2.3.0', 'event-stream': '~3.0.7' },
+541 silly install resolved     scripts: { test: 'set -e; for t in test/*.js; do node $t; done' },
+541 silly install resolved     author:
+541 silly install resolved      { name: '\'Dominic Tarr\'',
+541 silly install resolved        email: 'dominic.tarr@gmail.com',
+541 silly install resolved        url: 'http://dominictarr.com' },
+541 silly install resolved     license: 'MIT',
+541 silly install resolved     description: '<img src=https://secure.travis-ci.org/dominictarr/stream-combiner.png?branch=master>',
+541 silly install resolved     bugs: { url: 'https://github.com/dominictarr/stream-combiner/issues' },
+541 silly install resolved     _id: 'stream-combiner@0.0.4',
+541 silly install resolved     dist:
+541 silly install resolved      { shasum: '4d5e433c185261dde623ca3f44c586bcf5c4ad14',
+541 silly install resolved        tarball: 'https://registry.npmjs.org/stream-combiner/-/stream-combiner-0.0.4.tgz' },
+541 silly install resolved     _from: 'stream-combiner@>=0.0.4 <0.1.0',
+541 silly install resolved     _npmVersion: '1.3.11',
+541 silly install resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+541 silly install resolved     maintainers: [ [Object] ],
+541 silly install resolved     directories: {},
+541 silly install resolved     _shasum: '4d5e433c185261dde623ca3f44c586bcf5c4ad14',
+541 silly install resolved     _resolved: 'https://registry.npmjs.org/stream-combiner/-/stream-combiner-0.0.4.tgz',
+541 silly install resolved     readme: 'ERROR: No README data found!' } ]
+542 info install through@2.3.8 into E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+543 info install duplexer@0.1.1 into E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+544 info install from@0.1.7 into E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+545 info install map-stream@0.1.0 into E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+546 info install pause-stream@0.0.11 into E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+547 info install split@0.3.3 into E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+548 info install stream-combiner@0.0.4 into E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+549 info installOne through@2.3.8
+550 verbose installOne of through to E:\speakingtest\node_modules\mpg321\node_modules\event-stream not in flight; installing
+551 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+552 info installOne duplexer@0.1.1
+553 verbose installOne of duplexer to E:\speakingtest\node_modules\mpg321\node_modules\event-stream not in flight; installing
+554 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+555 info installOne from@0.1.7
+556 verbose installOne of from to E:\speakingtest\node_modules\mpg321\node_modules\event-stream not in flight; installing
+557 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+558 info installOne map-stream@0.1.0
+559 verbose installOne of map-stream to E:\speakingtest\node_modules\mpg321\node_modules\event-stream not in flight; installing
+560 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+561 info installOne pause-stream@0.0.11
+562 verbose installOne of pause-stream to E:\speakingtest\node_modules\mpg321\node_modules\event-stream not in flight; installing
+563 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+564 info installOne split@0.3.3
+565 verbose installOne of split to E:\speakingtest\node_modules\mpg321\node_modules\event-stream not in flight; installing
+566 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+567 info installOne stream-combiner@0.0.4
+568 verbose installOne of stream-combiner to E:\speakingtest\node_modules\mpg321\node_modules\event-stream not in flight; installing
+569 verbose correctMkdir C:\Users\jowell\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+570 verbose lock using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\through-510c25d67669c423.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through
+571 verbose lock using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\map-stream-ac0f6c5f480297f3.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream
+572 verbose lock using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\duplexer-9399090ca72310e1.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer
+573 verbose lock using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\from-f1fefb03c7a5aaaa.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from
+574 silly install write writing through 2.3.8 to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through
+575 silly install write writing map-stream 0.1.0 to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream
+576 silly install write writing duplexer 0.1.1 to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer
+577 silly install write writing from 0.1.7 to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from
+578 verbose lock using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\split-8c3ca0c677a9fac0.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split
+579 verbose unbuild node_modules\mpg321\node_modules\event-stream\node_modules\through
+580 verbose unbuild node_modules\mpg321\node_modules\event-stream\node_modules\map-stream
+581 verbose unbuild node_modules\mpg321\node_modules\event-stream\node_modules\duplexer
+582 silly install write writing split 0.3.3 to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split
+583 verbose lock using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\pause-stream-4d440fbf74e5f78e.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream
+584 verbose unbuild node_modules\mpg321\node_modules\event-stream\node_modules\from
+585 verbose lock using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\stream-combiner-f91bfb0385de8106.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner
+586 silly install write writing pause-stream 0.0.11 to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream
+587 silly install write writing stream-combiner 0.0.4 to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner
+588 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through is being purged from base E:\speakingtest
+589 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through
+590 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream is being purged from base E:\speakingtest
+591 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream
+592 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer is being purged from base E:\speakingtest
+593 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer
+594 verbose tar unpack C:\Users\jowell\AppData\Roaming\npm-cache\through\2.3.8\package.tgz
+595 verbose tar unpacking to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through
+596 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through is being purged
+597 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through
+598 verbose tar unpack C:\Users\jowell\AppData\Roaming\npm-cache\map-stream\0.1.0\package.tgz
+599 verbose tar unpacking to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream
+600 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream is being purged
+601 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream
+602 verbose tar unpack C:\Users\jowell\AppData\Roaming\npm-cache\duplexer\0.1.1\package.tgz
+603 verbose tar unpacking to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer
+604 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer is being purged
+605 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer
+606 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from is being purged from base E:\speakingtest
+607 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from
+608 silly gunzTarPerm modes [ '777', '666' ]
+609 silly gunzTarPerm modes [ '777', '666' ]
+610 silly gunzTarPerm modes [ '777', '666' ]
+611 verbose tar unpack C:\Users\jowell\AppData\Roaming\npm-cache\from\0.1.7\package.tgz
+612 verbose tar unpacking to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from
+613 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from is being purged
+614 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from
+615 verbose unbuild node_modules\mpg321\node_modules\event-stream\node_modules\split
+616 silly gunzTarPerm modes [ '777', '666' ]
+617 verbose unbuild node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream
+618 verbose unbuild node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner
+619 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split is being purged from base E:\speakingtest
+620 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split
+621 verbose tar unpack C:\Users\jowell\AppData\Roaming\npm-cache\split\0.3.3\package.tgz
+622 verbose tar unpacking to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split
+623 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split is being purged
+624 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split
+625 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream is being purged from base E:\speakingtest
+626 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream
+627 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner is being purged from base E:\speakingtest
+628 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner
+629 silly gunzTarPerm modes [ '777', '666' ]
+630 verbose tar unpack C:\Users\jowell\AppData\Roaming\npm-cache\pause-stream\0.0.11\package.tgz
+631 verbose tar unpacking to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream
+632 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream is being purged
+633 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream
+634 verbose tar unpack C:\Users\jowell\AppData\Roaming\npm-cache\stream-combiner\0.0.4\package.tgz
+635 verbose tar unpacking to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner
+636 silly gentlyRm E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner is being purged
+637 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner
+638 silly gunzTarPerm modes [ '777', '666' ]
+639 silly gunzTarPerm extractEntry package.json
+640 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+641 silly gunzTarPerm modes [ '777', '666' ]
+642 silly gunzTarPerm extractEntry package.json
+643 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+644 silly gunzTarPerm extractEntry package.json
+645 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+646 silly gunzTarPerm extractEntry package.json
+647 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+648 silly gunzTarPerm extractEntry package.json
+649 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+650 silly gunzTarPerm extractEntry index.js
+651 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+652 silly gunzTarPerm extractEntry .travis.yml
+653 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+654 silly gunzTarPerm extractEntry package.json
+655 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+656 silly gunzTarPerm extractEntry .npmignore
+657 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+658 silly gunzTarPerm extractEntry README.md
+659 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+660 silly gunzTarPerm extractEntry .npmignore
+661 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+662 silly gunzTarPerm extractEntry LICENCE
+663 silly gunzTarPerm modified mode [ 'LICENCE', 420, 438 ]
+664 silly gunzTarPerm extractEntry .npmignore
+665 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+666 silly gunzTarPerm extractEntry index.js
+667 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+668 silly gunzTarPerm extractEntry package.json
+669 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+670 silly gunzTarPerm extractEntry .npmignore
+671 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+672 silly gunzTarPerm extractEntry LICENCE
+673 silly gunzTarPerm modified mode [ 'LICENCE', 420, 438 ]
+674 silly gunzTarPerm extractEntry .npmignore
+675 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+676 silly gunzTarPerm extractEntry LICENSE
+677 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+678 silly gunzTarPerm extractEntry .npmignore
+679 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+680 silly gunzTarPerm extractEntry README.md
+681 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+682 silly gunzTarPerm extractEntry LICENSE.APACHE2
+683 silly gunzTarPerm modified mode [ 'LICENSE.APACHE2', 420, 438 ]
+684 silly gunzTarPerm extractEntry LICENSE.MIT
+685 silly gunzTarPerm modified mode [ 'LICENSE.MIT', 420, 438 ]
+686 silly gunzTarPerm extractEntry LICENCE
+687 silly gunzTarPerm modified mode [ 'LICENCE', 420, 438 ]
+688 silly gunzTarPerm extractEntry index.js
+689 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+690 silly gunzTarPerm extractEntry index.js
+691 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+692 silly gunzTarPerm extractEntry .travis.yml
+693 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+694 silly gunzTarPerm extractEntry .travis.yml
+695 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+696 silly gunzTarPerm extractEntry LICENSE.APACHE2
+697 silly gunzTarPerm modified mode [ 'LICENSE.APACHE2', 420, 438 ]
+698 silly gunzTarPerm extractEntry index.js
+699 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+700 silly gunzTarPerm extractEntry readme.markdown
+701 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+702 silly gunzTarPerm extractEntry test/index.js
+703 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+704 silly gunzTarPerm extractEntry test/pause-end.js
+705 silly gunzTarPerm modified mode [ 'test/pause-end.js', 420, 438 ]
+706 silly gunzTarPerm extractEntry index.js
+707 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+708 silly gunzTarPerm extractEntry .travis.yml
+709 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+710 silly gunzTarPerm extractEntry LICENSE
+711 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+712 silly gunzTarPerm extractEntry index.js
+713 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+714 silly gunzTarPerm extractEntry examples/pretty.js
+715 silly gunzTarPerm modified mode [ 'examples/pretty.js', 420, 438 ]
+716 silly gunzTarPerm extractEntry readme.markdown
+717 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+718 silly gunzTarPerm extractEntry test/index.js
+719 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+720 silly gunzTarPerm extractEntry .travis.yml
+721 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+722 silly gunzTarPerm extractEntry readme.markdown
+723 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+724 silly gunzTarPerm extractEntry test/async.js
+725 silly gunzTarPerm modified mode [ 'test/async.js', 420, 438 ]
+726 silly gunzTarPerm extractEntry LICENSE.MIT
+727 silly gunzTarPerm modified mode [ 'LICENSE.MIT', 420, 438 ]
+728 silly gunzTarPerm extractEntry readme.markdown
+729 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+730 silly gunzTarPerm extractEntry examples/pretty.js
+731 silly gunzTarPerm modified mode [ 'examples/pretty.js', 420, 438 ]
+732 silly gunzTarPerm extractEntry readme.markdown
+733 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+734 silly gunzTarPerm extractEntry .travis.yml
+735 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+736 silly gunzTarPerm extractEntry test/index.js
+737 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+738 silly gunzTarPerm extractEntry test/auto-destroy.js
+739 silly gunzTarPerm modified mode [ 'test/auto-destroy.js', 420, 438 ]
+740 silly gunzTarPerm extractEntry test/buffering.js
+741 silly gunzTarPerm modified mode [ 'test/buffering.js', 420, 438 ]
+742 silly gunzTarPerm extractEntry test/index.js
+743 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+744 silly gunzTarPerm extractEntry test/simple-map.asynct.js
+745 silly gunzTarPerm modified mode [ 'test/simple-map.asynct.js', 420, 438 ]
+746 silly gunzTarPerm extractEntry test/options.asynct.js
+747 silly gunzTarPerm modified mode [ 'test/options.asynct.js', 420, 438 ]
+748 silly gunzTarPerm extractEntry test/partitioned_unicode.js
+749 silly gunzTarPerm modified mode [ 'test/partitioned_unicode.js', 420, 438 ]
+750 silly gunzTarPerm extractEntry test/end.js
+751 silly gunzTarPerm modified mode [ 'test/end.js', 420, 438 ]
+752 silly gunzTarPerm extractEntry test/index.js
+753 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+754 silly gunzTarPerm extractEntry test/split.asynct.js
+755 silly gunzTarPerm modified mode [ 'test/split.asynct.js', 420, 438 ]
+756 silly gunzTarPerm extractEntry test/try_catch.asynct.js
+757 silly gunzTarPerm modified mode [ 'test/try_catch.asynct.js', 420, 438 ]
+758 verbose write writing to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream\package.json
+759 verbose write writing to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer\package.json
+760 verbose write writing to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner\package.json
+761 info preinstall pause-stream@0.0.11
+762 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream\package.json
+763 verbose write writing to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from\package.json
+764 info preinstall duplexer@0.1.1
+765 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer\package.json
+766 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream\package.json
+767 verbose write writing to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream\package.json
+768 info preinstall stream-combiner@0.0.4
+769 info preinstall from@0.1.7
+770 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner\package.json
+771 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer\package.json
+772 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from\package.json
+773 silly install resolved []
+774 verbose about to build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream
+775 info build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream
+776 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner\package.json
+777 info preinstall map-stream@0.1.0
+778 silly install resolved []
+779 verbose about to build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer
+780 info build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer
+781 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from\package.json
+782 info linkStuff pause-stream@0.0.11
+783 silly linkStuff pause-stream@0.0.11 has E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules as its parent node_modules
+784 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream\package.json
+785 verbose linkBins pause-stream@0.0.11
+786 verbose linkMans pause-stream@0.0.11
+787 verbose rebuildBundles pause-stream@0.0.11
+788 silly install resolved []
+789 verbose about to build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner
+790 info build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner
+791 info linkStuff duplexer@0.1.1
+792 silly linkStuff duplexer@0.1.1 has E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules as its parent node_modules
+793 info install pause-stream@0.0.11
+794 silly install resolved []
+795 verbose about to build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from
+796 info build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from
+797 info postinstall pause-stream@0.0.11
+798 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream\package.json
+799 verbose linkBins duplexer@0.1.1
+800 verbose linkMans duplexer@0.1.1
+801 verbose rebuildBundles duplexer@0.1.1
+802 info install duplexer@0.1.1
+803 info linkStuff stream-combiner@0.0.4
+804 silly linkStuff stream-combiner@0.0.4 has E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules as its parent node_modules
+805 verbose unlock done using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\pause-stream-4d440fbf74e5f78e.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\pause-stream
+806 info postinstall duplexer@0.1.1
+807 info linkStuff from@0.1.7
+808 silly linkStuff from@0.1.7 has E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules as its parent node_modules
+809 verbose write writing to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through\package.json
+810 verbose linkBins stream-combiner@0.0.4
+811 verbose linkMans stream-combiner@0.0.4
+812 verbose rebuildBundles stream-combiner@0.0.4
+813 silly install resolved []
+814 verbose about to build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream
+815 info build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream
+816 info install stream-combiner@0.0.4
+817 verbose linkBins from@0.1.7
+818 verbose linkMans from@0.1.7
+819 verbose rebuildBundles from@0.1.7
+820 info install from@0.1.7
+821 verbose unlock done using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\duplexer-9399090ca72310e1.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\duplexer
+822 info postinstall stream-combiner@0.0.4
+823 info postinstall from@0.1.7
+824 info linkStuff map-stream@0.1.0
+825 silly linkStuff map-stream@0.1.0 has E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules as its parent node_modules
+826 info preinstall through@2.3.8
+827 verbose unlock done using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\stream-combiner-f91bfb0385de8106.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\stream-combiner
+828 verbose unlock done using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\from-f1fefb03c7a5aaaa.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\from
+829 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through\package.json
+830 verbose write writing to E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split\package.json
+831 verbose linkBins map-stream@0.1.0
+832 verbose linkMans map-stream@0.1.0
+833 verbose rebuildBundles map-stream@0.1.0
+834 info install map-stream@0.1.0
+835 info postinstall map-stream@0.1.0
+836 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through\package.json
+837 verbose unlock done using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\map-stream-ac0f6c5f480297f3.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\map-stream
+838 silly install resolved []
+839 verbose about to build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through
+840 info build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through
+841 info linkStuff through@2.3.8
+842 silly linkStuff through@2.3.8 has E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules as its parent node_modules
+843 info preinstall split@0.3.3
+844 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split\package.json
+845 verbose linkBins through@2.3.8
+846 verbose linkMans through@2.3.8
+847 verbose rebuildBundles through@2.3.8
+848 info install through@2.3.8
+849 info postinstall through@2.3.8
+850 verbose readDependencies loading dependencies from E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split\package.json
+851 verbose unlock done using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\through-510c25d67669c423.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\through
+852 silly install resolved []
+853 verbose about to build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split
+854 info build E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split
+855 info linkStuff split@0.3.3
+856 silly linkStuff split@0.3.3 has E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules as its parent node_modules
+857 verbose linkBins split@0.3.3
+858 verbose linkMans split@0.3.3
+859 verbose rebuildBundles split@0.3.3
+860 info install split@0.3.3
+861 info postinstall split@0.3.3
+862 verbose unlock done using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\split-8c3ca0c677a9fac0.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream\node_modules\split
+863 verbose about to build E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+864 info build E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+865 info linkStuff event-stream@3.3.4
+866 silly linkStuff event-stream@3.3.4 has E:\speakingtest\node_modules\mpg321\node_modules as its parent node_modules
+867 verbose linkBins event-stream@3.3.4
+868 verbose linkMans event-stream@3.3.4
+869 verbose rebuildBundles event-stream@3.3.4
+870 verbose rebuildBundles [ 'duplexer',
+870 verbose rebuildBundles   'from',
+870 verbose rebuildBundles   'map-stream',
+870 verbose rebuildBundles   'pause-stream',
+870 verbose rebuildBundles   'split',
+870 verbose rebuildBundles   'stream-combiner',
+870 verbose rebuildBundles   'through' ]
+871 info install event-stream@3.3.4
+872 info postinstall event-stream@3.3.4
+873 verbose unlock done using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\event-stream-a76aa6ece5f98d98.lock for E:\speakingtest\node_modules\mpg321\node_modules\event-stream
+874 verbose about to build E:\speakingtest\node_modules\mpg321
+875 info build E:\speakingtest\node_modules\mpg321
+876 info linkStuff mpg321@0.1.5
+877 silly linkStuff mpg321@0.1.5 has E:\speakingtest\node_modules as its parent node_modules
+878 verbose linkBins mpg321@0.1.5
+879 verbose linkMans mpg321@0.1.5
+880 verbose rebuildBundles mpg321@0.1.5
+881 verbose rebuildBundles [ '.bin', 'event-stream', 'which' ]
+882 info install mpg321@0.1.5
+883 verbose unsafe-perm in lifecycle true
+884 info mpg321@0.1.5 Failed to exec install script
+885 verbose unlock done using C:\Users\jowell\AppData\Roaming\npm-cache\_locks\mpg321-35e93360bde0898a.lock for E:\speakingtest\node_modules\mpg321
+886 verbose stack Error: mpg321@0.1.5 install: `node bin/check-mpg321.js`
+886 verbose stack Exit status 1
+886 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:217:16)
+886 verbose stack     at emitTwo (events.js:87:13)
+886 verbose stack     at EventEmitter.emit (events.js:172:7)
+886 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+886 verbose stack     at emitTwo (events.js:87:13)
+886 verbose stack     at ChildProcess.emit (events.js:172:7)
+886 verbose stack     at maybeClose (internal/child_process.js:827:16)
+886 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+887 verbose pkgid mpg321@0.1.5
+888 verbose cwd E:\speakingtest
+889 error Windows_NT 10.0.16299
+890 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i" "mpg321"
+891 error node v4.4.7
+892 error npm  v2.15.8
+893 error code ELIFECYCLE
+894 error mpg321@0.1.5 install: `node bin/check-mpg321.js`
+894 error Exit status 1
+895 error Failed at the mpg321@0.1.5 install script 'node bin/check-mpg321.js'.
+895 error This is most likely a problem with the mpg321 package,
+895 error not with npm itself.
+895 error Tell the author that this fails on your system:
+895 error     node bin/check-mpg321.js
+895 error You can get information on how to open an issue for this project with:
+895 error     npm bugs mpg321
+895 error Or if that isn't available, you can get their info via:
+895 error
+895 error     npm owner ls mpg321
+895 error There is likely additional logging output above.
+896 verbose exit [ 1, true ]
+897 verbose unbuild node_modules\mpg321
+898 info preuninstall mpg321@0.1.5
+899 info uninstall mpg321@0.1.5
+900 verbose unbuild rmStuff mpg321@0.1.5 from E:\speakingtest\node_modules
+901 info postuninstall mpg321@0.1.5
+902 silly gentlyRm E:\speakingtest\node_modules\mpg321 is being purged from base E:\speakingtest
+903 verbose gentlyRm don't care about contents; nuking E:\speakingtest\node_modules\mpg321
+904 silly vacuum-fs purging E:\speakingtest\node_modules\mpg321
+905 silly vacuum-fs removing E:\speakingtest\node_modules
+906 silly vacuum-fs finished vacuuming up to E:\speakingtest
